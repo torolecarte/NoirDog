@@ -16,3 +16,20 @@ label sala_inicio:
     c_caramelo "A caminho, Chefe."
 
     jump quintal_colorido
+
+
+label sala_noir:
+    "[Placeholder]" "Entra cena da sala noir com vaso quebrado"
+
+    play music "sounds/beeh-simples.mp3" #Som: Porta batendo
+
+    jump sala_janela
+
+
+label sala_noir_janela:
+
+    "[Placeholder]" "Entra cena olhando pela janela"
+
+    play music "sounds/beeh-simples.mp3" #Som: Porta mala batendo
+
+    jump end

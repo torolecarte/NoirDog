@@ -1,3 +1,6 @@
+define encontrou_passagem = False
+
+
 label quintal_colorido:
 
     scene bg_quintal_real with dissolve
@@ -30,12 +33,18 @@ label quintal_noir:
     scene bg_quintal_noir with dissolve
 
     # Adicionar controle de fluxo para caso a seleção já tenha sido feita!!
-    menu:
-        "pular cerca":
-            jump quintal_noir_pularcerca
+    if not encontrou_passagem:
+        menu:
+            "pular cerca":
+                jump quintal_noir_pularcerca
+            "moita":
+                jump quintal_noir_passagem
+    
+    "Placeholder" "[Fala antes de entrar na casa]"
 
-        "moita":
-            jump quintal_noir_passagem
+    play music "sounds/beeh-simples.mp3" #Som: Pisando na casca de semente de girassol
+
+    jump sala_noir
 
 
 label quintal_noir_pularcerca:
@@ -49,6 +58,7 @@ label quintal_noir_passagem:
     
     "{i}{alpha=.5}Talvez por aqui tenha algo oculto que eu possa…{/alpha}{i}"
     c_caramelo "Bingo! É como eu sempre digo, instintos é que fazem o cão."
+    $ encontrou_passagem = True
     
     scene bg_billy_noir with dissolve
     pause
