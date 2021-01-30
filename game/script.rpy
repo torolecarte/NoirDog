@@ -12,11 +12,11 @@ define c_random = Character('???')
 
 
 ##Backgorunds bg_
-image bg_sala_real = "bg_sala_real.jpg"
-image bg_sala_noir = "bg_sala_noir.jpg"
-image bg_quintal_real = "bg_quintal_real.jpg"
-image bg_quintal_noir = "bg_quintal_noir.jpg"
-image bg_billy_noir = "bg_billy_noir.jpg"
+#image bg_sala_real = "bg_sala_real.jpg"
+#image bg_sala_noir = "bg_sala_noir.jpg"
+#image bg_quintal_real = "bg_quintal_real.jpg"
+#image bg_quintal_noir = "bg_quintal_noir.jpg"
+#image bg_billy_noir = "bg_billy_noir.jpg"
 
 ##Audio s_ m_
 

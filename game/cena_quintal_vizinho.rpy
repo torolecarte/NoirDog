@@ -22,7 +22,7 @@ label quintal_vizinho:
                 c_caramelo "Hora de executar o plano"
                 jump quintal_vizinho_plano
 
-    if entrou_cena
+    if entrou_cena:
         c_caramelo "E eu tenho instintos demais para meu próprio bem...{w} De'Loco."
         $ entrou_cena = False
 

@@ -1,6 +1,15 @@
 define encontrou_passagem = False
 
 
+screen investigacao_quintal_noir():
+        imagemap:
+            idle "bg_quintal_noir.png"
+            hover "bg_quintal_noir.png"
+            ground "bg_quintal_noir.png"
+        
+            hotspot(82, 300, 1197, 155) action Jump("quintal_noir_pularcerca")
+            hotspot(5, 378, 71, 80) action Jump("quintal_noir_passagem")
+
 label quintal_colorido:
 
     scene bg_quintal_real with dissolve
@@ -25,7 +34,6 @@ label quintal_colorido:
     "{i}{alpha=.5}Preciso encontrar uma forma de confirmar minhas suspeitas,{w}{cps=.25} deve haver algum jeito.{/cps}{/alpha}{/i}"
     c_caramelo "Posso ser um cachorro comum... mas sou um cachorro comum com instintos!"
 
-
     jump quintal_noir
 
 label quintal_noir:
@@ -33,21 +41,18 @@ label quintal_noir:
     scene bg_quintal_noir with dissolve
 
     if not encontrou_passagem:
-        menu:
-            "pular cerca":
-                jump quintal_noir_pularcerca
-            "moita":
-                jump quintal_noir_passagem
+        call screen investigacao_quintal_noir
     
     c_caramelo "Consegui. Chefe, Tem alguém na entrada, fique atrás de mim! ...Chefe?"
     c_billy "Yada, yada, CARAMELO. Yada!"
 
-##som vaso quebrado
+    play sound "sounds/beeh-simples.mp3" #Som: Som vaso quebrado
     play sound "sounds/beeh-simples.mp3" #Som: Pisando na casca de semente de girassol
+    
     pause
     c_billy "Yada, yada!"
 
-##som porta fechando
+    play sound "sounds/beeh-simples.mp3" #Som: Som porta batendo com pressa
     c_caramelo "Chefe, o que houve?! Estou indo!"
 
     jump sala_noir
