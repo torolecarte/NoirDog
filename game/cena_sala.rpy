@@ -4,7 +4,7 @@ label sala_inicio:
     scene bg_sala_real
 
     "{i}{alpha=.5}Nada como viver sob a segurança de portões resistentes, almofadas macias e um Chefe vigilante.{/alpha}{/i}"
-    "{i}{alpha=.5}Eu posso jurar que em seus olhos ele pode até mesmo ver o destino das coisas.{p}Falando nele, sinto o cheiro ficando mais forte.{/alpha}{/i}"   
+    "{i}{alpha=.5}Acredito que seus olhos podem ver até mesmo o destino das coisas.{p}Falando nele, sinto o cheiro ficando mais forte.{/alpha}{/i}"   
     
     c_billy "yada yada yada yada yada BOLINHA yada."
     
@@ -24,7 +24,7 @@ label sala_noir:
     c_caramelo "Meu deus, o que houve aqui?" 
 
 ##Clique no vaso quebrado
-    "{i}{alpha=.5}Estranho, isto é um dos meus alvos de prática. Mas já estava assim antes? Não, eu estava cansado demais para treinar dentro de casa, alguma outra pessoa o quebrou.{/alpha}{/i}"
+    "{i}{alpha=.5}Estranho, isto é um dos meus alvos de prática. Mas já estava assim antes?{w} Não, eu estava cansado demais para treinar dentro de casa, alguma outra pessoa o quebrou.{/alpha}{/i}"
 
 ##Clique em uma parte escura
     "{i}{alpha=.5}Está escuro aqui. Por que impediram o Sol de entrar? Algo não cheira bem.{/alpha}{/i}"
@@ -44,9 +44,9 @@ label sala_noir:
 label sala_noir_janela:
     scene bg_sala_noir with dissolve
 
-    c_caramelo "Não."
+    c_caramelo "{cps=15}Não.{/cps}"
 ##Silhueta com rabo de cavalo joga algo no porta malas de um carro
-    c_caramelo "NÃO!"
+    c_caramelo "{cps=30}NÃO!{/cps}"
 ##Rabo de Cavalo” entra no carro
     "{i}{alpha=.5}Isso não pode estar acontecendo, me descuidei demais.{/alpha}{/i}"
 ##Carro acelera e sai de cena   

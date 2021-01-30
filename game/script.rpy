@@ -1,6 +1,6 @@
 ﻿##Personagens c_
 define c_caramelo = Character('Caramelo')
-define c_billy = Character('Billy')
+define c_billy = Character('Billy DeLoco')
 define c_dono = Character('Chefe')
 define c_random = Character('???')
 
