@@ -10,12 +10,12 @@ screen investigacao_quintal_vizinho():
             ground "bg_billy_noir.jpg"
         
             hotspot(529, 17, 197, 132) action Jump("invest_papagaio")
-            hotspot(529, 17, 197, 132) action Jump("invest_bolinha")
-            hotspot(529, 17, 197, 132) action Jump("invest_semente_girassol")
+            hotspot(491, 172, 70, 51) action Jump("invest_bolinha")
+            hotspot(833, 555, 86, 90) action Jump("invest_semente_girassol")
 
 label quintal_vizinho:
     
-    if invest_papagaio: # and invest_bolinha and invest_semente_girassol:
+    if invest_papagaio and invest_bolinha and invest_semente_girassol:
         menu:
             "Executar plano":
                 c_caramelo "Hora de executar o plano"
