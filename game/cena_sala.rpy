@@ -21,7 +21,7 @@ label sala_inicio:
 label sala_noir:
     scene bg_sala_noir with dissolve
 
-    Caramelo: Meu deus, o que houve aqui?
+    c_caramelo "Meu deus, o que houve aqui?" 
 
 ##Clique no vaso quebrado
     "{i}{alpha=.5}Estranho, isto é um dos meus alvos de prática. Mas já estava assim antes? Não, eu estava cansado demais para treinar dentro de casa, alguma outra pessoa o quebrou.{/alpha}{/i}"
