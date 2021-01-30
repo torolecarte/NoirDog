@@ -6,7 +6,7 @@ label sala_inicio:
     "{i}{alpha=.5}Nada como viver sob a segurança de portões resistentes, almofadas macias e um Chefe vigilante.{/alpha}{/i}"
     "{i}{alpha=.5}Acredito que seus olhos podem ver até mesmo o destino das coisas.{p}Falando nele, sinto seu cheiro ficando mais forte.{/alpha}{/i}"   
     
-    c_billy "yada yada yada yada yada BOLINHA yada."
+    c_dono "yada yada yada yada yada BOLINHA yada."
     
     hide dono_play with dissolve
 
@@ -59,15 +59,15 @@ label sala_noir_janela:
     pause
 
 ##Cena da bolinha caindo
-    "{i}{alpha=.5}De’Loco estava certo.{w}{nw}{/alpha}{/i}"
+    "{i}{alpha=.5}De’Loco estava certo.{/alpha}{/i}"
 
-    scene cs_foco_bolinha with dissolve
-    "{i}{alpha=.5}...era tarde demais...{/alpha}{/i}"
+    scene cs_foco_bolinha
+    "{i}{alpha=.5}{cps=25}Era tarde demais...{/cps}{/alpha}{/i}"
 ##Bolinha no chão-luz foco com corte das persianas na bolinha
     scene bg_black with dissolve
     "{i}{alpha=.5}{cps=15}Eu estava atrasado...{/cps}{/alpha}{/i}"
 
 ##fadeout pra tela preta
-    "{b}Continua...{/b}"    
+    "{b}{vspace=50}{space=850}Continua...{/b}"    
 
     jump end
