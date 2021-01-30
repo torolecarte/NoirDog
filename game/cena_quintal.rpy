@@ -6,12 +6,14 @@ label quintal_colorido:
     
     "{i}{alpha=.5}Apesar do esforço, sou grato pelos treinos do Chefe.{p}Um homem sábio.{/alpha}{/i}"
     "{i}{alpha=.5}Mesmo na companhia um do outro e seguros, ele pensa no pior.{p}Eu concordo com você, Chefe.{/alpha}{/i}"
-
+    
+    jump quintal_noir
 
 label quintal_noir:
     
     scene bg_quintal_noir with dissolve
 
+    # Adicionar controle de fluxo para caso a seleção já tenha sido feita!!
     menu:
         "pular cerca":
             jump quintal_noir_pularcerca

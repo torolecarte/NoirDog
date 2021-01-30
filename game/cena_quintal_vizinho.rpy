@@ -1,3 +1,5 @@
 label quintal_vizinho:
     
-    jump end
+    "Placeholder"
+
+    jump quintal_noir
