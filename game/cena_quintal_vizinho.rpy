@@ -17,9 +17,14 @@ screen investigacao_quintal_vizinho():
 label quintal_vizinho:
     
     if invest_papagaio and invest_bolinha and invest_semente_girassol:
+        "{i}{alpha=.5}Se meu instinto estiver correto, eu só esperar um pouco...{/alpha}{/i}"
+        ##Papagaio muda o sprite de acordado para dormindo
+        "{i}{alpha=.5}Como previsto, ele pode ser louco, mas o peso da comida tem sempre o mesmo resultado. Sono.{/alpha}{/i}"
+        "{i}{alpha=.5}Muito bem, agora posso executar meu plano, apenas preciso evitar pisar nessas sementes.{p} Serei sorrateiro como o silêncio.{/alpha}{/i}"
         menu:
             "Executar plano":
-                c_caramelo "Hora de executar o plano"
+                c_caramelo "Bingo! Missão cumprida."
+                "{i}{alpha=.5}Se isto fazia parte de seu treino, Chefe. Considere feito.{/alpha}{/i}"
                 jump quintal_vizinho_plano
 
     if entrou_cena:
@@ -29,30 +34,37 @@ label quintal_vizinho:
     call screen investigacao_quintal_vizinho
 
 
-##clique na bolinha
-    "{i}{alpha=.5}Lá está, brilhante como sempre com sua cor única. Logo te salvarei, apenas preciso de um plano.{/alpha}{/i}"
 
-##clique no Papagaio
+##-----
+
+label invest_papagaio:    
+    $ invest_papagaio = True
     "{i}{alpha=.5}{cps=.25}Pobre coitado,{/cps}{w} o mundo externo é feito de dor e sofrimento, e este animal conhece os dois intimamente.{/alpha}{/i}"
     "{i}{alpha=.5}Não quero imaginar o que acontece por aqui, apenas os gritos constantes, cantorias estranhas e palavras sem sentido são suficientes para alimentar meus pesadelos.{/alpha}{/i}"
     "{i}{alpha=.5}O que quer que tenha te deixado assim,{w} jamais quero encontrar.{/alpha}{/i}"
 
-##Após investigar as outras duas coisas: clique nas sementes de girassol
-    "{i}{alpha=.5}Sementes por todos os lados.{w} Isso pode ser um empecilho,{w} mas por outro lado, Billie acabou de se alimentar.{/alpha}{/i}"
-    "{i}{alpha=.5}Se meu instinto estiver correto, eu só esperar um pouco...{/alpha}{/i}"
+    jump quintal_vizinho
 
-##Papagaio muda o sprite de acordado para dormindo
-    "{i}{alpha=.5}Como previsto, ele pode ser louco, mas o peso da comida tem sempre o mesmo resultado. Sono.{/alpha}{/i}"
-    "{i}{alpha=.5}Muito bem, agora posso executar meu plano, apenas preciso evitar pisar nessas sementes.{p} Serei sorrateiro como o silêncio.{/alpha}{/i}"
 
-##clique para executar o plano
-    c_caramelo "Bingo! Missão cumprida."
-    "{i}{alpha=.5}Se isto fazia parte de seu treino, Chefe. Considere feito.{/alpha}{/i}"
+label invest_bolinha:
+    $ invest_bolinha = True    
+    "{i}{alpha=.5}Lá está, brilhante como sempre com sua cor única. Logo te salvarei, apenas preciso de um plano.{/alpha}{/i}"
 
-##som campainha
+    jump quintal_vizinho
+
+
+label invest_semente_girassol:
+    $ invest_semente_girassol = True
+    "{i}{alpha=.5}Sementes por todos os lados.{w} Isso pode ser um empecilho,{w} mas por outro lado, Billie acabou de se alimentar.{/alpha}{/i}"    
+
+    jump quintal_vizinho
+
+
+
+label quintal_vizinho_plano:
+    play sound "sounds/beeh-simples.mp3" #Som: Barulho da campainha
     "{i}{alpha=.5}Eu conheço esse som. É a entrada. Deixei a casa desprotegida. Preciso voltar!{/alpha}{/i}"
-
-##pisa nas sementes e o papagaio acorda
+    ##pisa nas sementes e o papagaio acorda
     c_caramelo "Mas que..."
     c_billy "atrasaaAARRRRGHHH! Atrasado! Yada! Yada! Atrasado! Yada! Sementes! Cão! Yada! Yada!"
     "{i}{alpha=.5}Não tenho tempo para isso, há alguém na casa!{/alpha}{/i}"
@@ -61,43 +73,12 @@ label quintal_vizinho:
     "{i}{alpha=.5}Ele é insano, fala como um dos humanos.{/alpha}{/i}"
     c_caramelo "Saia da frente!"
 
-##Menu de escolha direita ou esquerda, independente da escolha gera *esbarrar no papagaio*
-    c_caramelo "Você é louco!"
-    c_billy "Yada! Yada! Yada! Yada! Yada!"
-
-##Escolhe o outro lado
-
-    "Fim da cena"
-    jump quintal_noir
-
-
-label invest_papagaio:    
-    $ invest_papagaio = True
-    "Clicou no papagaio"
-
-    jump quintal_vizinho
-
-
-label invest_bolinha:
-    $ invest_bolinha = True    
-    "Clicou na bolinha"
-
-    jump quintal_vizinho
-
-
-label invest_semente_girassol:
-    $ invest_semente_girassol = True
-    "Clicou na semente de girassol"
-
-    jump quintal_vizinho
-
-
-
-label quintal_vizinho_plano:
-    play sound "sounds/beeh-simples.mp3" #Som: Barulho da campainha
-
     menu:
-        "Voltar para casa":
-            "Preciso ir proteger a casa"
-    
-    # Foco na pata pisando na semente de girassol
+        "esquerda ou direita":
+            ##Menu de escolha direita ou esquerda, independente da escolha gera *esbarrar no papagaio*
+            c_caramelo "Você é louco!"
+            c_billy "Yada! Yada! Yada! Yada! Yada!"
+
+    ##Escolhe o outro lado
+    "outro lado"
+    jump quintal_noir
