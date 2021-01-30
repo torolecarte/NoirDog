@@ -40,9 +40,9 @@ label quintal_noir:
             "moita":
                 jump quintal_noir_passagem
     
-    "Placeholder" "[Fala antes de entrar na casa]"
+    
 
-    play music "sounds/beeh-simples.mp3" #Som: Pisando na casca de semente de girassol
+    play sound "sounds/beeh-simples.mp3" #Som: Pisando na casca de semente de girassol
 
     jump sala_noir
 

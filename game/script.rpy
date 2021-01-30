@@ -20,7 +20,7 @@ image bg_billy_noir = "bg_billy_noir.jpg"
 
 ##Audio s_ m_
 
-
+## "{i}{alpha=.5}{/alpha}{/i}"
 #--------------------------------
 label start:
     jump sala_inicio
