@@ -19,6 +19,8 @@ label sala_inicio:
 
 
 label sala_noir:
+    scene bg_sala_noir with dissolve
+
     "Placeholder" "Entra cena da sala noir com vaso quebrado"
 
     play sound "sounds/beeh-simples.mp3" #Som: Porta batendo
@@ -27,6 +29,7 @@ label sala_noir:
 
 
 label sala_noir_janela:
+    scene bg_sala_noir with dissolve
 
     "Placeholder" "Entra cena olhando pela janela"
 

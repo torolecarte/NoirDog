@@ -34,7 +34,6 @@ label quintal_vizinho:
     call screen investigacao_quintal_vizinho
 
 
-
 ##-----
 
 label invest_papagaio:    
@@ -58,7 +57,6 @@ label invest_semente_girassol:
     "{i}{alpha=.5}Sementes por todos os lados.{w} Isso pode ser um empecilho,{w} mas por outro lado, Billie acabou de se alimentar.{/alpha}{/i}"    
 
     jump quintal_vizinho
-
 
 
 label quintal_vizinho_plano:
