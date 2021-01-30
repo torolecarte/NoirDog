@@ -6,7 +6,7 @@ label sala_inicio:
     "{i}{alpha=.5}Nada como viver sob a segurança de portões resistentes, almofadas macias e um Chefe vigilante.{/alpha}{/i}"
     "{i}{alpha=.5}Eu posso jurar que em seus olhos ele pode até mesmo ver o destino das coisas.{p}Falando nele, sinto o cheiro ficando mais forte.{/alpha}{/i}"   
     
-    c_dono "yada yada yada yada yada BOLINHA yada."
+    c_billy "yada yada yada yada yada BOLINHA yada."
     
     hide dono_play with dissolve
 

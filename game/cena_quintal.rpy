@@ -42,7 +42,16 @@ label quintal_noir:
     
     
 
+    c_caramelo "Consegui. Chefe, Tem alguém na entrada, fique atrás de mim! ...Chefe?"
+    c_billy "Yada, yada, CARAMELO. Yada!"
+
+##som vaso quebrado
     play sound "sounds/beeh-simples.mp3" #Som: Pisando na casca de semente de girassol
+    pause
+    c_billy "Yada, yada!"
+
+##som porta fechando
+    c_caramelo "Chefe, o que houve?! Estou indo!"
 
     jump sala_noir
 
