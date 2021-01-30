@@ -21,18 +21,43 @@ label sala_inicio:
 label sala_noir:
     scene bg_sala_noir with dissolve
 
-    "Placeholder" "Entra cena da sala noir com vaso quebrado"
+    Caramelo: Meu deus, o que houve aqui?
 
-    play sound "sounds/beeh-simples.mp3" #Som: Porta batendo
+##Clique no vaso quebrado
+    "{i}{alpha=.5}Estranho, isto é um dos meus alvos de prática. Mas já estava assim antes? Não, eu estava cansado demais para treinar dentro de casa, alguma outra pessoa o quebrou.{/alpha}{/i}"
 
+##Clique em uma parte escura
+    "{i}{alpha=.5}Está escuro aqui. Por que impediram o Sol de entrar? Algo não cheira bem.{/alpha}{/i}"
+    
+##Clique na porta
+    c_caramelo "Chefe!?"
+    "{i}{alpha=.5}Ele não parece estar aqui, mas então onde estaria?{/alpha}{/i}"
+
+##após os 3 cliques=    
+    "{i}{alpha=.5}Isso não parece bom. Escureceram meu quarto, quebraram um dos meus alvos, talvez em alguma luta, e o Chefe não está em lugar algum...{/alpha}{/i}"
+    c_caramelo "Havia alguém na porta!"
+
+##clique janela(???)
     jump sala_noir_janela
 
 
 label sala_noir_janela:
     scene bg_sala_noir with dissolve
 
-    "Placeholder" "Entra cena olhando pela janela"
+    c_caramelo "Não."
+##Silhueta com rabo de cavalo joga algo no porta malas de um carro
+    c_caramelo "NÃO!"
+##Rabo de Cavalo” entra no carro
+    "{i}{alpha=.5}Isso não pode estar acontecendo, me descuidei demais.{/alpha}{/i}"
+##Carro acelera e sai de cena   
+    c_caramelo "CHEFE!!!"
 
-    play sound "sounds/beeh-simples.mp3" #Som: Porta mala batendo
+##Cena da bolinha caindo
+    "{i}{alpha=.5}De’Loco estava certo. Era tarde demais…{/alpha}{/i}"
+##Bolinha no chão-luz foco com corte das persianas na bolinha
+    "{i}{alpha=.5}Eu estava atrasado...{/alpha}{/i}"
+
+##fadeout pra tela preta
+    "Continua..."    
 
     jump end
