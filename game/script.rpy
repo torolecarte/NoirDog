@@ -1,5 +1,4 @@
 ﻿##Personagens c_
-define c_none = Character('')
 
 define c_caramelo = Character('Caramelo')
 image caramelo_de_boa = "caramelo_de_boa.png"
@@ -12,6 +11,7 @@ define c_dono = Character('Dono')
 image dono_play = "dono_play.webp"
 image dono_troll = "dono_troll.jpg"
 
+define c_random = Character('???')
 ##add
 image bolinha = "bolinha.png"
 
@@ -28,7 +28,7 @@ image bg_billy_noir = "bg_billy_noir.jpg"
 
 #--------------------------------
 label start:
-    "{cps=25}{alpha=.5}{i}Mais um dia agradável.{/i}{/alpha}{/cps}"
+    "{cps=25}{i}{alpha=.5}Mais um dia agradável.{/alpha}{/i}{/cps}"
     scene bg_sala_real
     show caramelo_de_boa:
         xalign 0.0
@@ -60,7 +60,7 @@ label start:
         xalign 0.5
         yalign -5.0
     scene bg_quintal_real with dissolve
-#####texto encaixado
+#####texto encaixado daqui pra baixo é 200% zuera (antes disso era apenas 90%zueira)
     show caramelo_bolado with moveinbottom:
         xalign 0.0
         yalign 1.0
