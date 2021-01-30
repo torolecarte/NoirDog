@@ -1,6 +1,7 @@
 define invest_papagaio = False
 define invest_bolinha = False
 define invest_semente_girassol = False
+define entrou_cena = True
 
 
 screen investigacao_quintal_vizinho():
@@ -21,9 +22,12 @@ label quintal_vizinho:
                 c_caramelo "Hora de executar o plano"
                 jump quintal_vizinho_plano
 
+    if entrou_cena
+        c_caramelo "E eu tenho instintos demais para meu próprio bem...{w} De'Loco."
+        $ entrou_cena = False
+
     call screen investigacao_quintal_vizinho
 
-    c_caramelo "E eu tenho instintos demais para meu próprio bem...{w} De'Loco."
 
 ##clique na bolinha
     "{i}{alpha=.5}Lá está, brilhante como sempre com sua cor única. Logo te salvarei, apenas preciso de um plano.{/alpha}{/i}"
