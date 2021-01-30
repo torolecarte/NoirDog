@@ -17,9 +17,9 @@ screen investigacao_quintal_vizinho():
 label quintal_vizinho:
     
     if invest_papagaio and invest_bolinha and invest_semente_girassol:
-        "{i}{alpha=.5}Se meu instinto estiver correto, eu só esperar um pouco...{/alpha}{/i}"
+        "{i}{alpha=.5}Se meu instinto estiver correto, eu só preciso esperar um pou{cps=15}co...{/cps}{/alpha}{/i}"
         ##Papagaio muda o sprite de acordado para dormindo
-        "{i}{alpha=.5}Como previsto, ele pode ser louco, mas o peso da comida tem sempre o mesmo resultado. Sono.{/alpha}{/i}"
+        "{i}{alpha=.5}Como previsto, ele pode ser louco, mas o peso da comida tem sempre o mesmo resultado.{p} Sono.{/alpha}{/i}"
         "{i}{alpha=.5}Muito bem, agora posso executar meu plano, apenas preciso evitar pisar nessas sementes.{p} {cps=20}Serei sorrateiro como o silêncio.{/cps}{/alpha}{/i}"
         menu:
             "Executar plano":
@@ -40,7 +40,7 @@ label invest_papagaio:
     $ invest_papagaio = True
     "{i}{alpha=.5}{cps=25}Pobre coitado,{/cps}{w} o mundo externo é feito de dor e sofrimento, e este animal conhece os dois intimamente.{/alpha}{/i}"
     "{i}{alpha=.5}Não quero imaginar o que acontece por aqui, apenas os gritos constantes, cantorias estranhas e palavras sem sentido são suficientes para alimentar meus pesadelos.{/alpha}{/i}"
-    "{i}{alpha=.5}O que quer que tenha o deixado assim,{w} jamais quero encontrar.{/alpha}{/i}"
+    "{i}{alpha=.5}O que quer que tenha o deixado assim,{w}{cps=20} jamais quero encontrar.{/cps}{/alpha}{/i}"
 
     jump quintal_vizinho
 
@@ -54,7 +54,7 @@ label invest_bolinha:
 
 label invest_semente_girassol:
     $ invest_semente_girassol = True
-    "{i}{alpha=.5}{cps=25}Sementes por todos os lados.{/cps}{w} Isso pode ser um empecilho,{w} mas por outro lado, Billie acabou de se alimentar.{/alpha}{/i}"    
+    "{i}{alpha=.5}{cps=25}Sementes por todos os lados.{/cps}{w} Isso pode ser um problema,{w} mas por outro lado, Billie acabou de se alimentar.{/alpha}{/i}"    
 
     jump quintal_vizinho
 
