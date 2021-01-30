@@ -16,7 +16,6 @@ label quintal_noir:
     
     scene bg_quintal_noir with dissolve
 
-    # Adicionar controle de fluxo para caso a seleção já tenha sido feita!!
     if not encontrou_passagem:
         menu:
             "pular cerca":
@@ -24,9 +23,9 @@ label quintal_noir:
             "moita":
                 jump quintal_noir_passagem
     
-    "Placeholder" "[Fala antes de entrar na casa]"
+    "Placeholder" "Fala antes de entrar na casa"
 
-    play music "sounds/beeh-simples.mp3" #Som: Pisando na casca de semente de girassol
+    play sound "sounds/beeh-simples.mp3" #Som: Pisando na casca de semente de girassol
 
     jump sala_noir
 

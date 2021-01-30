@@ -23,6 +23,7 @@ image bg_billy_noir = "bg_billy_noir.jpg"
 
 #--------------------------------
 label start:
+    #jump quintal_vizinho
     jump sala_inicio
 
 label end:

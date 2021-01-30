@@ -19,17 +19,17 @@ label sala_inicio:
 
 
 label sala_noir:
-    "[Placeholder]" "Entra cena da sala noir com vaso quebrado"
+    "Placeholder" "Entra cena da sala noir com vaso quebrado"
 
-    play music "sounds/beeh-simples.mp3" #Som: Porta batendo
+    play sound "sounds/beeh-simples.mp3" #Som: Porta batendo
 
-    jump sala_janela
+    jump sala_noir_janela
 
 
 label sala_noir_janela:
 
-    "[Placeholder]" "Entra cena olhando pela janela"
+    "Placeholder" "Entra cena olhando pela janela"
 
-    play music "sounds/beeh-simples.mp3" #Som: Porta mala batendo
+    play sound "sounds/beeh-simples.mp3" #Som: Porta mala batendo
 
     jump end
