@@ -54,10 +54,10 @@ label sala_inicio:
 
 
 label sala_noir:
-    scene bg_sala_noir with dissolve
     
     if cena_entrada_noir:
         $ cena_entrada_noir = False
+        scene bg_sala_noir with pushleft
         show caramelo_surpreso at left
         c_caramelo "Meu deus, o que houve aqui?"
         hide caramelo_surpreso with dissolve
@@ -98,7 +98,15 @@ label sala_noir_invest_porta:
 
 
 label sala_noir_invest_janela:
-    scene bg_janela with dissolve
+
+    show bg_sala_noir:
+        crop(0, 0, 1280, 720)
+        size(1280, 720)
+        linear 4.0 crop (740, 0, 536, 418)
+
+    pause 1.0
+
+    scene bg_janela with Fade(1.5, 1.5, 1.5)
 
     c_caramelo "{cps=15}Não.{/cps}"
     scene cs_porta_malas with dissolve
