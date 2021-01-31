@@ -34,7 +34,7 @@ label sala_inicio:
     show caramelo_dormindo at right with moveinright
     "{i}{alpha=.5}Nada como viver sob a segurança de portões resistentes, almofadas macias e um Chefe vigilante.{/alpha}{/i}"    
     "{i}{alpha=.5}Acredito que seus olhos podem ver até mesmo o destino das coisas.{p}{nw}{/alpha}{/i}"
-    show caramelo_curioso at right
+    show caramelo_curioso_flipped at right
     hide caramelo_dormindo
     "{i}{alpha=.5}Falando nele, sinto seu cheiro ficando mais forte.{/alpha}{/i}"
     show chefe_bolinha at left with moveinleft
@@ -44,7 +44,7 @@ label sala_inicio:
 
     "{i}{alpha=.5}Estranho, sequer terminei o descanso do primeiro treino e o Chefe já tem mais um exercício planejado.{/alpha}{/i}"
     "{i}{alpha=.5}Mas se ele acha mesmo necessário, então eu também acho.{/alpha}{/i}"
-    hide caramelo_curioso
+    hide caramelo_curioso_flipped
     show caramelo_alegre at right
     hide caramelo_alegre with moveoutleft
     

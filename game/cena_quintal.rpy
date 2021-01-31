@@ -15,32 +15,37 @@ label quintal_colorido:
     scene bg_quintal_real with pushright
     show caramelo_alegre at left with moveinright
     show chefe_bolinha_flipped at right with moveinright
+    hide caramelo_alegre with dissolve
+    show caramelo_alegre_flipped at left with dissolve
     c_caramelo "Estou preparado.{p}{i}{alpha=.5}{cps=25}E sempre estarei.{/cps}{/alpha}{/i}"
     
     "{i}{alpha=.5}Apesar do esforço, sou grato pelos treinos do Chefe.{p}{cps=25}Um humano sábio.{/cps}{/alpha}{/i}"
     "{i}{alpha=.5}Mesmo com a companhia um do outro e seguros, ele se prepara para o pior.{p}Eu concordo com você, Chefe.{/alpha}{/i}"
     "{i}{alpha=.5}É sempre bom estar pronto para enfrentar o caos do mundo.{/alpha}{/i}"
+    hide caramelo_alegre_flipped
     show caramelo_curioso at left
     c_random "{size=-5}Yada, yada. Comida. Yada. Comida. Yada, yada.{/size}"
     "{i}{alpha=.5}Ignore ele, ignore ele. Você tem um trabalho a fazer, foque.{/alpha}{/i}"
     hide caramelo_curioso
+    show caramelo_alegre_flipped at left
     c_caramelo "Em posição! Pode lançar."
     hide chefe_bolinha_flipped with dissolve
     show chefe_fone at right with dissolve    
+    hide caramelo_alegre_flipped
     show caramelo_curioso at left
     c_dono "yada. yada yada yada."    
     "{i}{alpha=.5}O chefe está falando algo com o bloco de sons. Boas informações são realmente indispensáveis.{/alpha}{/i}"
     c_dono "yada yada yada...{w}{nw}"
     hide chefe_fone with dissolve
     show chefe_jogando at right with dissolve    
-    hide caramelo_curioso
+    hide caramelo_curioso with dissolve
+    show caramelo_alegre_flipped at left with dissolve
     extend "{size=50} YADA?!{/size}"
-    hide chefe_jogando with moveoutright
-    hide caramelo_curioso
+    hide chefe_jogando with moveoutright    
     "{i}{alpha=.5}Este é o sinal! Eu pego, eu pego.{/alpha}{/i}"
     c_random "{size=-5}YADA! YADA! Comida! Yada! Atrasado! Yada!{/size}"
-    show caramelo_serio_flipped at left
-    hide caramelo_alegre
+    hide caramelo_alegre_flipped
+    show caramelo_serio_flipped at left    
     "{i}{alpha=.5}{cps=15}Eu nã{/cps}{cps=5}o...{/cps}{w} N-{w}{cps=50}não consigo encontrá-la!{/cps}{/alpha}{/i}"
     "{i}{alpha=.5}Acho que o equipamento não está na área de treino... deve ter saído de nosso território.{/alpha}{/i}"
     "{i}{alpha=.5}Ainda sinto seu cheiro, ela está nos arredores, será que...{w} De'Loco.{/alpha}{/i}"
