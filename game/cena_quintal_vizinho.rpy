@@ -3,6 +3,7 @@ define invest_bolinha = False
 define invest_semente_girassol = False
 define cena_entrada = True
 
+image sprite_billie_acordado = "sprite billie acordado.png"
 
 screen investigacao_quintal_vizinho():
         imagemap:
@@ -65,18 +66,45 @@ label invest_semente_girassol:
 label quintal_vizinho_plano:
     play sound "sounds/beeh-simples.mp3" #Som: Barulho da campainha
     "{i}{alpha=.5}Eu conheço esse som. É a entrada.{p} Deixei a casa desprotegida. Preciso voltar!{/alpha}{/i}"
+        
     ##pisa nas sementes e o papagaio acorda
     c_caramelo "Mas qu{cps=5}e...{/cps}"
+    
+    
     play sound "sounds/beeh-simples.mp3" #Som: Barulho pisando nas sementes
+    show foco pisada girassol at truecenter with moveinleft
+
     c_billy "atrasaaAARRRRGHHH! Atrasado! Yada! Yada! Atrasado! Yada! Sementes! Cão! Yada! Yada!"
+    hide foco pisada girassol with dissolve
+    show sprite_billie_acordado at left with moveinleft
+
     "{i}{alpha=.5}Não tenho tempo para você, Billie.{w} Há alguém na casa!{/alpha}{/i}"
+
+    #show sprite billie acordado at center with moveinleft
+    show sprite_billie_acordado:
+        choice:
+            linear 0.5 xalign 0.1
+        choice:
+            linear 0.5 xalign 0.9
+        choice:
+            linear 0.5 xalign 0.5
+        repeat
+
     c_caramelo "Saia da minha frente!"
     c_billy "Yada! Cão! Cão! Atrasado! Yada, Yada!"
     "{i}{alpha=.5}Ele é insano, fala como um dos humanos.{/alpha}{/i}"
     c_caramelo "Saia da frente!"
-
     
+    show sprite_billie_acordado at center with move
+
+    show bg_billy_noir 
+    show sprite_billie_acordado at center
+    with hpunch
+
     c_caramelo "Você é louco!"
+
+    show sprite_billie_acordado at right with move
+
     c_billy "Yada! Yada! Yada! Yada! Yada!"
 
     ##Escolhe o outro lado
