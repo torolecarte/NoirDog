@@ -32,7 +32,7 @@ label quintal_vizinho:
         hide caramelo_noir
         menu:
             "Executar plano":
-                scene bg_billie_sem_bola with dissolve
+                scene bg_billie_dsb with dissolve
                 show caramelo_noir_confiante_flipped at left with dissolve
                 c_caramelo "Bingo! Missão cumprida."
                 "{i}{alpha=.5}Se isto fazia parte de seu treino, Chefe. Considere feito.{/alpha}{/i}"
@@ -84,8 +84,8 @@ label quintal_vizinho_plano:
     ##pisa nas sementes e o papagaio acorda
     c_caramelo "Mas qu{cps=5}e...{/cps}"
     
-    
-     
+    scene bg_billie_sem_bola
+    show caramelo_noir_surpreso_flipped at left 
     play sound "sounds/sementes.wav" volume 0.7 
     show foco pisada girassol at truecenter with moveinbottom
     
@@ -116,7 +116,7 @@ label quintal_vizinho_plano:
     
     show sprite_billie_acordado at center with move
     show caramelo_noir_brabo_flipped at center with move
-    show bg_billy_noir 
+    show bg_billie_sem_bola 
     show sprite_billie_acordado at center
     with hpunch
     
