@@ -18,21 +18,26 @@ label quintal_colorido:
     show chefe_bolinha_flipped at right with moveinright
     hide caramelo_alegre with dissolve
     show caramelo_alegre_flipped at left with dissolve
+    play sound "sounds/latido_alarmado.mp3"
     c_caramelo "Estou preparado.{p}{i}{alpha=.5}{cps=25}E sempre estarei.{/cps}{/alpha}{/i}"
     
     "{i}{alpha=.5}Apesar do esforço, sou grato pelos treinos do Chefe.{p}{cps=25}Um humano sábio.{/cps}{/alpha}{/i}"
     "{i}{alpha=.5}Mesmo com a companhia um do outro e seguros, ele se prepara para o pior.{p}Eu concordo com você, Chefe.{/alpha}{/i}"
     "{i}{alpha=.5}É sempre bom estar pronto para enfrentar o caos do mundo.{/alpha}{/i}"
     hide caramelo_alegre_flipped
-    show caramelo_curioso at left
+    show caramelo_curioso at left    
+    play sound "sounds/papagaio4.mp3" volume 0.5
     c_random "{size=-5}Yada, yada. Comida. Yada. Comida. Yada, yada.{/size}"
+    play sound "sounds/latido_hmm.mp3"
     "{i}{alpha=.5}Ignore ele, ignore ele. Você tem um trabalho a fazer, foque.{/alpha}{/i}"
     hide caramelo_curioso
     show caramelo_alegre_flipped at left
-    c_caramelo "Em posição! Pode lançar."
+    play sound "sounds/latido_alarmado.mp3"
+    c_caramelo "Em posição! Pode lançar."    
     hide chefe_bolinha_flipped with dissolve
     show chefe_fone at right with dissolve    
     hide caramelo_alegre_flipped
+    play sound "sounds/latido_hmm.mp3"
     show caramelo_curioso at left
     c_dono "yada. yada yada yada."    
     "{i}{alpha=.5}O chefe está falando algo com o bloco de sons. Boas informações são realmente indispensáveis.{/alpha}{/i}"
@@ -44,12 +49,15 @@ label quintal_colorido:
     extend "{size=50} YADA?!{/size}"
     hide chefe_jogando with moveoutright    
     "{i}{alpha=.5}Este é o sinal! Eu pego, eu pego.{/alpha}{/i}"
+    play sound "sounds/papagaio2.mp3" volume 0.2
     c_random "{size=-5}YADA! YADA! Comida! Yada! Atrasado! Yada!{/size}"
     hide caramelo_alegre_flipped
-    show caramelo_serio_flipped at left    
+    show caramelo_serio_flipped at left
+    play sound "sounds/latido_hmm.mp3"
     "{i}{alpha=.5}{cps=15}Eu nã{/cps}{cps=5}o...{/cps}{w} N-{w}{cps=50}não consigo encontrá-la!{/cps}{/alpha}{/i}"
     "{i}{alpha=.5}Acho que o equipamento não está na área de treino... deve ter saído de nosso território.{/alpha}{/i}"
     "{i}{alpha=.5}Ainda sinto seu cheiro, ela está nos arredores, será que...{w} De'Loco.{/alpha}{/i}"
+    play sound "sounds/papagaio3.mp3" volume 0.1
     c_billy "Yada! {size=30}Fiuuuuuiiii!{/size} Comida. {size=-5}Yum, yada, yum.{/size}"
     hide caramelo_serio_flipped with dissolve
     "{i}{alpha=.5}Preciso encontrar uma forma de confirmar minhas suspeitas...{/alpha}{/i}"
