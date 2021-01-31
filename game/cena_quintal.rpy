@@ -13,7 +13,7 @@ screen investigacao_quintal_noir():
 
 label quintal_colorido:
 
-    scene bg_quintal_real with dissolve
+    scene bg_quintal_real with slideright
     show caramelo_alegre at left with moveinright
     show chefe_bolinha at right with moveinright
     c_caramelo "Estou preparado.{p}{i}{alpha=.5}{cps=25}E sempre estarei.{/cps}{/alpha}{/i}"
