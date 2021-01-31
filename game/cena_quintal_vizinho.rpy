@@ -116,7 +116,8 @@ label quintal_vizinho_plano:
     show bg_billy_noir 
     show sprite_billie_acordado at center
     with hpunch
-
+    
+    play sound "sounds/punch.opus"
     show caramelo_noir_brabo_flipped at left with move
     show sprite_billie_acordado at right with move
     c_caramelo "Você é louco!"
