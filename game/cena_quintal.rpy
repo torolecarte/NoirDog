@@ -52,10 +52,11 @@ label quintal_colorido:
     c_random "{size=-5}YADA! YADA! Comida! Yada! Atrasado! Yada!{/size}"
     hide caramelo_alegre_flipped
     show caramelo_serio_flipped at left
-    play sound "sounds/latido_alarmado.mp3"
+    play sound "sounds/latido_hmm.mp3"
     "{i}{alpha=.5}{cps=15}Eu nã{/cps}{cps=5}o...{/cps}{w} N-{w}{cps=50}não consigo encontrá-la!{/cps}{/alpha}{/i}"
     "{i}{alpha=.5}Acho que o equipamento não está na área de treino... deve ter saído de nosso território.{/alpha}{/i}"
     "{i}{alpha=.5}Ainda sinto seu cheiro, ela está nos arredores, será que...{w} De'Loco.{/alpha}{/i}"
+    play sound "sounds/papagaio3.mp3" volume 0.1
     c_billy "Yada! {size=30}Fiuuuuuiiii!{/size} Comida. {size=-5}Yum, yada, yum.{/size}"
     hide caramelo_serio_flipped with dissolve
     "{i}{alpha=.5}Preciso encontrar uma forma de confirmar minhas suspeitas...{/alpha}{/i}"
