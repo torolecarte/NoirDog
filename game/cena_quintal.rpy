@@ -69,6 +69,7 @@ label quintal_noir_pularcerca:
 label quintal_noir_passagem:
     
     "{i}{alpha=.5}Deve ter  algo escondido  que me a{cps=25}jude a …{/cps}{/alpha}{i}"
+    play sound "sounds/beeh-simples.mp3" #Som: Som de moita
     scene bg_quintal_noir_buraco with dissolve
     c_caramelo "Bingo!{w} É como eu sempre digo, instintos é que fazem o cão."
     $ encontrou_passagem = True    
