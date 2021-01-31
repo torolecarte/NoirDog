@@ -6,12 +6,12 @@ label sala_inicio:
     "{i}{alpha=.5}Nada como viver sob a segurança de portões resistentes, almofadas macias e um Chefe vigilante.{/alpha}{/i}"
     "{i}{alpha=.5}Acredito que seus olhos podem ver até mesmo o destino das coisas.{p}Falando nele, sinto seu cheiro ficando mais forte.{/alpha}{/i}"   
     
-    c_dono "yada yada yada yada yada BOLINHA yada."
+    c_dono "yada yada NOIR yada yada BOLINHA yada."
     
     hide dono_play with dissolve
 
-    "{i}{alpha=.5}Estranho, ainda não terminei o descanso do primeiro treino. E o Chefe já tem mais um exercício planejado.{/alpha}{/i}"
-    "{i}{alpha=.5}Se ele acha mesmo necessário, então eu também acho.{/alpha}{/i}"
+    "{i}{alpha=.5}Estranho, sequer terminei o descanso do primeiro treino e o Chefe já tem mais um exercício planejado.{/alpha}{/i}"
+    "{i}{alpha=.5}Mas se ele acha mesmo necessário, então eu também acho.{/alpha}{/i}"
     
     c_caramelo "A caminho, Chefe."
 
@@ -21,7 +21,7 @@ label sala_inicio:
 label sala_noir:
     scene bg_sala_noir with dissolve
 
-    c_caramelo "Meu deus, o que houve aqui?" 
+    c_caramelo "Meu deus, o que aconteceu aqui?" 
 
 ##Clique no vaso quebrado
     "{i}{alpha=.5}Estranho, isto é um dos meus alvos de prática. Mas já estava assim antes?{w} Não, eu estava cansado demais para treinar dentro de casa, alguma coisa o quebrou.{/alpha}{/i}"
@@ -31,10 +31,10 @@ label sala_noir:
     
 ##Clique na porta
     c_caramelo "Chefe!?"
-    "{i}{alpha=.5}Ele não parece estar aqui, mas então onde estaria?{/alpha}{/i}"
+    "{i}{alpha=.5}Ele parece não estar aqui, mas então onde estaria?{/alpha}{/i}"
 
 ##após os 3 cliques=    
-    "{i}{alpha=.5}Isso não parece bom. Escureceram meu quarto, quebraram um dos meus alvos, talvez em alguma luta, e o Chefe não está em lugar algum...{/alpha}{/i}"
+    "{i}{alpha=.5}Isso não é  bom. Escureceram meu quarto, quebraram um dos meus alvos, talvez em alguma luta, e o Chefe não está em lugar algum...{/alpha}{/i}"
     c_caramelo "Havia alguém na porta!"
 
 ##clique janela(???)
