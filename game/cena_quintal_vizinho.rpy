@@ -1,21 +1,24 @@
 define invest_papagaio = False
 define invest_bolinha = False
 define invest_semente_girassol = False
-define entrou_cena = True
+define cena_entrada = True
 
 
 screen investigacao_quintal_vizinho():
         imagemap:
-            idle "bg_billy_noir.jpg"
-            hover "bg_billy_noir.jpg"
-            ground "bg_billy_noir.jpg"
+            idle "bg_billy_noir.png"
+            hover "bg_billy_noir.png"
+            ground "bg_billy_noir.png"
         
-            hotspot(529, 17, 197, 132) action Jump("invest_papagaio")
-            hotspot(491, 172, 70, 51) action Jump("invest_bolinha")
-            hotspot(833, 555, 86, 90) action Jump("invest_semente_girassol")
+            hotspot(65, 375, 197, 172) action Jump("invest_papagaio")
+            hotspot(419, 572, 51, 53) action Jump("invest_bolinha")
+            hotspot(764, 547, 98, 71) action Jump("invest_semente_girassol")
+            hotspot(1178, 516, 57, 42) action Jump("invest_semente_girassol")
+            hotspot(71, 614, 52, 30) action Jump("invest_semente_girassol")
 
 label quintal_vizinho:
-    
+    scene bg_billy_noir with dissolve
+
     if invest_papagaio and invest_bolinha and invest_semente_girassol:
         "{i}{alpha=.5}Se meu instinto estiver correto, eu só preciso esperar um pou{cps=15}co...{/cps}{/alpha}{/i}"
         ##Papagaio muda o sprite de acordado para dormindo
@@ -27,9 +30,9 @@ label quintal_vizinho:
                 "{i}{alpha=.5}Se isto fazia parte de seu treino, Chefe. Considere feito.{/alpha}{/i}"
                 jump quintal_vizinho_plano
 
-    if entrou_cena:
+    if cena_entrada:
         c_caramelo "E eu tenho instintos demais para meu próprio bem...{w} De'Loco."
-        $ entrou_cena = False
+        $ cena_entrada = False
 
     call screen investigacao_quintal_vizinho
 

@@ -7,8 +7,9 @@ screen investigacao_quintal_noir():
             hover "bg_quintal_noir.png"
             ground "bg_quintal_noir.png"
         
-            hotspot(82, 300, 1197, 155) action Jump("quintal_noir_pularcerca")
-            hotspot(5, 378, 71, 80) action Jump("quintal_noir_passagem")
+            hotspot(370, 318, 908, 176) action Jump("quintal_noir_pularcerca")
+            hotspot(0, 316, 359, 81) action Jump("quintal_noir_pularcerca")
+            hotspot(14, 394, 350, 121) action Jump("quintal_noir_passagem")
 
 label quintal_colorido:
 
@@ -69,9 +70,6 @@ label quintal_noir_passagem:
     
     "{i}{alpha=.5}Talvez por aqui tenha algo oculto que eu po{cps=15}ssa…{/cps}{/alpha}{i}"
     c_caramelo "Bingo!{w} É como eu sempre digo, instintos é que fazem o cão."
-    $ encontrou_passagem = True
-    
-    scene bg_billy_noir with dissolve
-    
+    $ encontrou_passagem = True    
 
     jump quintal_vizinho

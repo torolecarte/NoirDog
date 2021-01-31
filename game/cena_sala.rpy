@@ -1,3 +1,32 @@
+define invest_escuro = False
+define invest_vaso = False
+define invest_porta = False
+define cena_entrada_noir = True
+
+screen investigacao_sala_noir():
+        imagemap:
+            idle "bg_sala_noir.png"
+            hover "bg_sala_noir.png"
+            ground "bg_sala_noir.png"
+        
+            hotspot(0, 0, 1280, 69) action Jump("sala_noir_invest_escuro")
+            hotspot(2, 602, 83, 116) action Jump("sala_noir_invest_escuro")
+            hotspot(1168, 600, 109, 119) action Jump("sala_noir_invest_escuro")
+            hotspot(1, 60, 260, 87) action Jump("sala_noir_invest_escuro")
+
+            hotspot(620, 413, 129, 59) action Jump("sala_noir_invest_vaso")
+                      
+            hotspot(771, 168, 114, 231) action Jump("sala_noir_invest_porta")
+
+screen investigacao_sala_noir_final():
+        imagemap:
+            idle "bg_sala_noir.png"
+            hover "bg_sala_noir.png"
+            ground "bg_sala_noir.png"
+
+            hotspot(1081, 86, 169, 268) action Jump("sala_noir_invest_janela")
+
+
 label sala_inicio:
     "{cps=25}{i}{alpha=.5}Mais um dia agradável.{/alpha}{/i}{/cps}"
     
@@ -20,28 +49,39 @@ label sala_inicio:
 
 label sala_noir:
     scene bg_sala_noir with dissolve
-
-    c_caramelo "Meu deus, o que houve aqui?" 
-
-##Clique no vaso quebrado
-    "{i}{alpha=.5}Estranho, isto é um dos meus alvos de prática. Mas já estava assim antes?{w} Não, eu estava cansado demais para treinar dentro de casa, alguma coisa o quebrou.{/alpha}{/i}"
-
-##Clique em uma parte escura
-    "{i}{alpha=.5}Está escuro aqui. Por que impediram o Sol de entrar? Algo não cheira bem.{/alpha}{/i}"
     
-##Clique na porta
-    c_caramelo "Chefe!?"
-    "{i}{alpha=.5}Ele não parece estar aqui, mas então onde estaria?{/alpha}{/i}"
+    if cena_entrada_noir:
+        $ cena_entrada_noir = False
+        c_caramelo "Meu deus, o que houve aqui?"
 
-##após os 3 cliques=    
+    if not invest_porta or not invest_vaso or not invest_escuro:
+        call screen investigacao_sala_noir
+
+    ##após os 3 cliques
     "{i}{alpha=.5}Isso não parece bom. Escureceram meu quarto, quebraram um dos meus alvos, talvez em alguma luta, e o Chefe não está em lugar algum...{/alpha}{/i}"
     c_caramelo "Havia alguém na porta!"
 
-##clique janela(???)
-    jump sala_noir_janela
+    call screen investigacao_sala_noir_final
 
 
-label sala_noir_janela:
+label sala_noir_invest_vaso:
+    $ invest_vaso = True
+    "{i}{alpha=.5}Estranho, isto é um dos meus alvos de prática. Mas já estava assim antes?{w} Não, eu estava cansado demais para treinar dentro de casa, alguma coisa o quebrou.{/alpha}{/i}"
+    jump sala_noir
+
+label sala_noir_invest_escuro:
+    $ invest_escuro = True
+    "{i}{alpha=.5}Está escuro aqui. Por que impediram o Sol de entrar? Algo não cheira bem.{/alpha}{/i}"
+    jump sala_noir
+    
+label sala_noir_invest_porta:
+    $ invest_porta = True
+    c_caramelo "Chefe!?"
+    "{i}{alpha=.5}Ele não parece estar aqui, mas então onde estaria?{/alpha}{/i}"
+    jump sala_noir
+
+
+label sala_noir_invest_janela:
     scene bg_janela with dissolve
 
     c_caramelo "{cps=15}Não.{/cps}"
