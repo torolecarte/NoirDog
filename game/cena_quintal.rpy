@@ -63,16 +63,19 @@ label quintal_noir:
         call screen investigacao_quintal_noir
     
     scene bg_quintal_noir_buraco with dissolve
+    show caramelo_noir at left with moveinbottom
     "{i}{alpha=.5}Consegui, essa foi por um pêlo.{/alpha}{/i}"
-    c_caramelo "Chefe, tem alguém na entrada, fique atrás de mim!{w}{nw}"
+    c_caramelo "Chefe, tem alguém na entrada, fique atrás de mim!{p}{nw}"
     play sound "sounds/beeh-simples.mp3" #Som: Som vaso quebrado
+    show caramelo_surpreso at left
+    hide caramelo_noir
     extend "{cps=25} ...Chefe?{/cps}"
     c_billy "{size=-5}Yada, yada, NOIR. Yada!{/size}"            
     
 
     play sound "sounds/beeh-simples.mp3" #Som: Som porta batendo com pressa
     c_caramelo "Chefe, o que houve?! Estou indo!"
-
+    hide caramelo_surpreso with moveoutright
     jump sala_noir
 
 

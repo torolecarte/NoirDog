@@ -58,32 +58,42 @@ label sala_noir:
     
     if cena_entrada_noir:
         $ cena_entrada_noir = False
+        show caramelo_surpreso at left
         c_caramelo "Meu deus, o que houve aqui?"
-
+        hide caramelo_surpreso with dissolve
     if not invest_porta or not invest_vaso or not invest_escuro:
         call screen investigacao_sala_noir
 
     ##após os 3 cliques
+    show caramelo_noir at left with dissolve
     "{i}{alpha=.5}Isso não parece bom. Escureceram meu quarto, quebraram um dos meus alvos, talvez em alguma luta, e o Chefe não está em lugar algum...{/alpha}{/i}"
     c_caramelo "Havia alguém na porta!{p}{i}{alpha=.5}{cps=30}Preciso checar na janela.{/cps}{/alpha}{/i}"
-
+    hide caramelo_noir with dissolve
     call screen investigacao_sala_noir_final
 
 
 label sala_noir_invest_vaso:
     $ invest_vaso = True
+    show caramelo_noir at left with dissolve
     "{i}{alpha=.5}Estranho, isto é um dos meus alvos de prática. Mas já estava assim antes?{w} Não, eu estava cansado demais para treinar dentro de casa, alguma coisa o quebrou.{/alpha}{/i}"
+    hide caramelo_noir with dissolve
     jump sala_noir
 
 label sala_noir_invest_escuro:
     $ invest_escuro = True
+    show caramelo_noir at left with dissolve
     "{i}{alpha=.5}Está escuro aqui. Por que impediram o Sol de entrar? Algo não cheira bem.{/alpha}{/i}"
+    hide caramelo_noir with dissolve
     jump sala_noir
     
 label sala_noir_invest_porta:
     $ invest_porta = True
+    show caramelo_surpreso at left
     c_caramelo "Chefe!?"
+    hide caramelo_surpreso
+    show caramelo_noir at left with dissolve    
     "{i}{alpha=.5}Ele não parece estar aqui, mas então onde estaria?{/alpha}{/i}"
+    hide caramelo_noir with dissolve
     jump sala_noir
 
 
