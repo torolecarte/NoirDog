@@ -90,8 +90,15 @@ label quintal_vizinho_plano:
     show foco pisada girassol at truecenter with moveinbottom
     
     pause 0.5
-        
+
+    play sound ("sounds/papagaio1.mp3")
+    pause 1
+    play sound ("sounds/papagaio1.mp3")
+    
+    
+    
     c_billy "atrasaa{size=+5}A{/size}{size=+10}A{/size}{size=+15}R{/size}{size=+20}RR{/size}{size=+25}R{/size}{size=+30}GHHH!{/size} Atrasado! Yada! Yada!{size=40} Atrasado!{/size} Yada! Sementes! {size=30}Cão!{/size} Yada! Yada!"
+    play sound ("sounds/papagaio1.mp3")
     hide foco pisada girassol with dissolve
     hide caramelo_noir_surpreso_flipped
     show caramelo_noir_brabo_flipped at left
@@ -110,6 +117,12 @@ label quintal_vizinho_plano:
         repeat
 
     c_caramelo "Saia da minha frente!"
+    play sound ("sounds/papagaio1.mp3")
+    pause 1
+    "{i}{alpha=.5}Ele é insano, fala como um dos humanos.{/alpha}{/i}"
+    play sound ("sounds/papagaio1.mp3")
+    pause 1
+    play sound ("sounds/papagaio1.mp3")
     c_billy "Yada! Cão! Cão! Atrasado! Yada, Yada!"
     "{i}{alpha=.5}Ele é insano, fala como um dos humanos.{/alpha}{/i}"
     c_caramelo "Saia da frente!"
