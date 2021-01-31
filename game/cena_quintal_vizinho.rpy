@@ -7,9 +7,9 @@ image sprite_billie_acordado = "sprite billie acordado.png"
 
 screen investigacao_quintal_vizinho():
         imagemap:
-            idle "bg_billy_noir.png"
-            hover "bg_billy_noir.png"
-            ground "bg_billy_noir.png"
+            idle "bg_billie_acordado.png"
+            hover "bg_billie_acordado.png"
+            ground "bg_billie_acordado.png"
         
             hotspot(65, 375, 197, 172) action Jump("invest_papagaio")
             hotspot(419, 572, 51, 53) action Jump("invest_bolinha")
@@ -18,20 +18,21 @@ screen investigacao_quintal_vizinho():
             hotspot(71, 614, 52, 30) action Jump("invest_semente_girassol")
 
 label quintal_vizinho:
-    scene bg_billy_noir with dissolve
+    scene bg_billie_acordado with dissolve
 
     if invest_papagaio and invest_bolinha and invest_semente_girassol:
         show caramelo_noir at right with dissolve
-        show sprite sonolento at left with dissolve
+        
         "{i}{alpha=.5}Se meu instinto estiver correto, eu só preciso esperar um pou{cps=15}co...{/cps}{/alpha}{/i}"
-        hide sprite sonolento with dissolve
-        show sprite billie dormindo at left with dissolve
+        scene bg_billie_dormindo
+        show caramelo_noir at right
         "{i}{alpha=.5}Como previsto, ele pode ser louco, mas o peso da comida tem sempre o mesmo resultado.{p} Sono.{/alpha}{/i}"
         "{i}{alpha=.5}Muito bem, agora posso executar o plano, preciso apenas me esquivar das sementes.{p} {cps=20}Serei sorrateiro como o silêncio.{/cps}{/alpha}{/i}"
-        hide sprite billie dormindo
+        
         hide caramelo_noir
         menu:
             "Executar plano":
+                scene bg_billie_sem_bola with dissolve
                 show caramelo_noir_confiante_flipped at left with dissolve
                 c_caramelo "Bingo! Missão cumprida."
                 "{i}{alpha=.5}Se isto fazia parte de seu treino, Chefe. Considere feito.{/alpha}{/i}"
