@@ -68,8 +68,10 @@ label sala_noir:
     ##após os 3 cliques
     show caramelo_noir at left with dissolve
     "{i}{alpha=.5}Isso não parece bom. Escureceram meu quarto, quebraram um dos meus alvos, talvez em alguma luta, e o Chefe não está em lugar algum...{/alpha}{/i}"
+    hide caramelo_noir 
+    show caramelo_noir_flipped at left with dissolve    
     c_caramelo "Havia alguém na porta!{p}{i}{alpha=.5}{cps=30}Preciso checar na janela.{/cps}{/alpha}{/i}"
-    hide caramelo_noir with dissolve
+    hide caramelo_noir_flipped with dissolve
     call screen investigacao_sala_noir_final
 
 
@@ -108,7 +110,7 @@ label sala_noir_invest_janela:
     pause 1.0
 
     scene bg_janela with Fade(1.5, 1.5, 1.5)
-    show caramelo_noir_surpreso_flipped at center     ##-------------------------------
+    show caramelo_noir_surpreso_flipped at center with moveinleft     ##-------------------------------
     c_caramelo "{cps=15}Não.{/cps}"
     hide caramelo_noir_surpreso_flipped
     show caramelo_noir_medo_flipped at center   ##-------------------------------
