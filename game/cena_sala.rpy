@@ -96,7 +96,7 @@ label sala_noir_invest_janela:
     c_caramelo "{size=50}CHEFE!!!{/size}"
 
     scene cs_foco_luz with dissolve
-    pause
+    pause .2
 
 ##Cena da bolinha caindo
     "{i}{alpha=.5}De’Loco estava certo.{/alpha}{/i}"
