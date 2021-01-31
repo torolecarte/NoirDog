@@ -72,7 +72,9 @@ label quintal_noir:
     c_billy "{size=-5}Yada, yada, NOIR. Yada!{/size}"            
     
 
-    play sound "sounds/beeh-simples.mp3" #Som: Som porta batendo com pressa
+    play sound "sounds/porta.mp3" volume 0.1
+    pause 1
+    play sound "sounds/tranca.mp3" volume 0.1
     c_caramelo "Chefe, o que houve?! Estou indo!"
     hide caramelo_noir_surpreso_flipped with moveoutright
     jump sala_noir
