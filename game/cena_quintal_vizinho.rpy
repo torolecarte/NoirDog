@@ -79,15 +79,17 @@ label quintal_vizinho_plano:
     show caramelo_noir_surpreso_flipped at left
     play sound "sounds/campainha.mp3" volume 0.1
     "{i}{alpha=.5}Eu conheço esse som. É a entrada.{p} Deixei a casa desprotegida. Preciso voltar!{/alpha}{/i}"
-        
+    
     ##pisa nas sementes e o papagaio acorda
     c_caramelo "Mas qu{cps=5}e...{/cps}"
     
     
-    play sound "sounds/beeh-simples.mp3" #Som: Barulho pisando nas sementes
-    
+     
+    play sound "sounds/sementes.wav" volume 0.7 
     show foco pisada girassol at truecenter with moveinbottom
+    
     pause 0.5
+        
     c_billy "atrasaa{size=+5}A{/size}{size=+10}A{/size}{size=+15}R{/size}{size=+20}RR{/size}{size=+25}R{/size}{size=+30}GHHH!{/size} Atrasado! Yada! Yada!{size=40} Atrasado!{/size} Yada! Sementes! {size=30}Cão!{/size} Yada! Yada!"
     hide foco pisada girassol with dissolve
     hide caramelo_noir_surpreso_flipped
@@ -117,7 +119,7 @@ label quintal_vizinho_plano:
     show sprite_billie_acordado at center
     with hpunch
     
-    play sound "sounds/punch.opus"
+    play sound "sounds/punch.opus" volume 0.5
     show caramelo_noir_brabo_flipped at left with move
     show sprite_billie_acordado at right with move
     c_caramelo "Você é louco!"
