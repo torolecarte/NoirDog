@@ -32,10 +32,10 @@ label quintal_vizinho:
         hide caramelo_noir
         menu:
             "Executar plano":
-                show caramelo_noir_confiante at left with dissolve
+                show caramelo_noir_confiante_flipped at left with dissolve
                 c_caramelo "Bingo! Missão cumprida."
                 "{i}{alpha=.5}Se isto fazia parte de seu treino, Chefe. Considere feito.{/alpha}{/i}"
-                hide caramelo_noir_confiante
+                hide caramelo_noir_confiante_flipped
                 jump quintal_vizinho_plano
 
     if cena_entrada:
@@ -76,7 +76,7 @@ label invest_semente_girassol:
 
 
 label quintal_vizinho_plano:
-    show caramelo_surpreso at left
+    show caramelo_noir_surpreso_flipped at left
     play sound "sounds/beeh-simples.mp3" #Som: Barulho da campainha
     "{i}{alpha=.5}Eu conheço esse som. É a entrada.{p} Deixei a casa desprotegida. Preciso voltar!{/alpha}{/i}"
         
@@ -90,8 +90,8 @@ label quintal_vizinho_plano:
     pause 0.5
     c_billy "atrasaa{size=+5}A{/size}{size=+10}A{/size}{size=+15}R{/size}{size=+20}RR{/size}{size=+25}R{/size}{size=+30}GHHH!{/size} Atrasado! Yada! Yada!{size=40} Atrasado!{/size} Yada! Sementes! {size=30}Cão!{/size} Yada! Yada!"
     hide foco pisada girassol with dissolve
-    hide caramelo_surpreso
-    show caramelo_noir_brabo at left
+    hide caramelo_noir_surpreso_flipped
+    show caramelo_noir_brabo_flipped at left
     show sprite_billie_acordado at center with moveinleft
 
     "{i}{alpha=.5}Não tenho tempo para você, Billie.{w} Há alguém na casa!{/alpha}{/i}"
@@ -112,12 +112,12 @@ label quintal_vizinho_plano:
     c_caramelo "Saia da frente!"
     
     show sprite_billie_acordado at center with move
-    show caramelo_noir_brabo at center with move
+    show caramelo_noir_brabo_flipped at center with move
     show bg_billy_noir 
     show sprite_billie_acordado at center
     with hpunch
 
-    show caramelo_noir_brabo at left with move
+    show caramelo_noir_brabo_flipped at left with move
     show sprite_billie_acordado at right with move
     c_caramelo "Você é louco!"
    

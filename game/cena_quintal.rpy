@@ -1,6 +1,5 @@
 define encontrou_passagem = False
 
-
 screen investigacao_quintal_noir():
         imagemap:
             idle "bg_quintal_noir.png"
@@ -40,17 +39,17 @@ label quintal_colorido:
     hide caramelo_curioso
     "{i}{alpha=.5}Este é o sinal! Eu pego, eu pego.{/alpha}{/i}"
     c_random "{size=-5}YADA! YADA! Comida! Yada! Atrasado! Yada!{/size}"
-    show caramelo_serio at left
+    show caramelo_noir_flipped at left
     hide caramelo_alegre
     "{i}{alpha=.5}{cps=15}Eu nã{/cps}{cps=5}o...{/cps}{w} N-{w}{cps=50}não consigo encontrá-la!{/cps}{/alpha}{/i}"
     "{i}{alpha=.5}Acho que o equipamento não está na área de treino... deve ter saído de nosso território.{/alpha}{/i}"
     "{i}{alpha=.5}Ainda sinto seu cheiro, ela está nos arredores, será que...{w} De'Loco.{/alpha}{/i}"
     c_billy "Yada! {size=30}Fiuuuuuiiii!{/size} Comida. {size=-5}Yum, yada, yum.{/size}"
-    hide caramelo_serio with dissolve
+    hide caramelo_noir_flipped with dissolve
     "{i}{alpha=.5}Preciso encontrar uma forma de confirmar minhas suspeitas...{/alpha}{/i}"
-    show caramelo_noir at left with dissolve 
+    show caramelo_noir_flipped at left with dissolve
     "{i}{alpha=.5}{cps=25}...deve haver algum jeito.{/cps}{/alpha}{/i}"
-    show caramelo_noir at center with MoveTransition(1.2)
+    show caramelo_noir_flipped at center with MoveTransition(1.2)
     c_caramelo "Posso ser um cachorro comum... mas sou um cachorro comum com instintos!"
     hide caramelo_noir with dissolve
     jump quintal_noir
@@ -63,19 +62,19 @@ label quintal_noir:
         call screen investigacao_quintal_noir
     
     scene bg_quintal_noir_buraco with dissolve
-    show caramelo_noir at left with moveinbottom
+    show caramelo_noir_flipped at left with moveinbottom
     "{i}{alpha=.5}Consegui, essa foi por um pêlo.{/alpha}{/i}"
     c_caramelo "Chefe, tem alguém na entrada, fique atrás de mim!{p}{nw}"
     play sound "sounds/beeh-simples.mp3" #Som: Som vaso quebrado
-    show caramelo_surpreso at left
-    hide caramelo_noir
+    show caramelo_noir_surpreso_flipped at left
+    hide caramelo_noir_flipped
     extend "{cps=25} ...Chefe?{/cps}"
     c_billy "{size=-5}Yada, yada, NOIR. Yada!{/size}"            
     
 
     play sound "sounds/beeh-simples.mp3" #Som: Som porta batendo com pressa
     c_caramelo "Chefe, o que houve?! Estou indo!"
-    hide caramelo_surpreso with moveoutright
+    hide caramelo_noir_surpreso_flipped with moveoutright
     jump sala_noir
 
 
