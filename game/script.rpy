@@ -1,6 +1,6 @@
 ﻿##Personagens c_
 
-define fdp = Character('')
+define fdp = Character('', window_background=None)
 define c_caramelo = Character('Noir')
 define c_billy = Character('Billie De\'Loco')
 define c_dono = Character('Chefe')
