@@ -132,13 +132,21 @@ label sala_noir_invest_janela:
     pause .2
 
 ##Cena da bolinha caindo
-    "{i}{alpha=.5}De’Loco estava certo.{/alpha}{/i}"
+    "{i}{alpha=.5}{cps=20}De’Loco estava certo.{/cps}{/alpha}{/i}"
+    scene bola1 with dissolve
+    pause 0.1
+    scene bola2 with dissolve
+    pause 0.3
+    scene bola3 with dissolve
+    pause 0.1
+    scene bola4 with dissolve
+    pause 0.3
 
-    scene cs_foco_bolinha
-    "{i}{alpha=.5}{cps=25}Era tarde demais...{/cps}{/alpha}{/i}"
+    scene cs_foco_bolinha with dissolve
+    "{i}{alpha=.5}{cps=20}Era tarde demais...{/cps}{/alpha}{/i}"
 ##Bolinha no chão-luz foco com corte das persianas na bolinha
     scene bg_black with dissolve
-    "{i}{alpha=.5}{cps=15}Eu estava atrasado...{/cps}{/alpha}{/i}"
+    "{i}{alpha=.5}{cps=10}Eu estava atrasado...{/cps}{/alpha}{/i}"
 
 ##fadeout pra tela preta
     fdp "{b}{vspace=50}{space=810}Continua...{/b}" 
