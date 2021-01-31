@@ -68,7 +68,7 @@ label quintal_vizinho_plano:
     ##pisa nas sementes e o papagaio acorda
     c_caramelo "Mas qu{cps=5}e...{/cps}"
     play sound "sounds/beeh-simples.mp3" #Som: Barulho pisando nas sementes
-    c_billy "atrasaaAARRRRGHHH! Atrasado! Yada! Yada! Atrasado! Yada! Sementes! Cão! Yada! Yada!"
+    c_billy "atrasaa{size=+5}A{/size}{size=+10}A{/size}{size=+15}R{/size}{size=+20}RR{/size}{size=+25}R{/size}{size=+30}GHHH!{/size} Atrasado! Yada! Yada!{size=40} Atrasado!{/size} Yada! Sementes! {size=30}Cão!{/size} Yada! Yada!"
     "{i}{alpha=.5}Não tenho tempo para você, Billie.{w} Há alguém na casa!{/alpha}{/i}"
     c_caramelo "Saia da minha frente!"
     c_billy "Yada! Cão! Cão! Atrasado! Yada, Yada!"

@@ -20,18 +20,18 @@ label quintal_colorido:
     "{i}{alpha=.5}Apesar do esforço, sou grato pelos treinos do Chefe.{p}{cps=25}Um humano sábio.{/cps}{/alpha}{/i}"
     "{i}{alpha=.5}Mesmo com a companhia um do outro e seguros, ele se prepara para o pior.{p}Eu concordo com você, Chefe.{/alpha}{/i}"
     "{i}{alpha=.5}É sempre bom estar pronto para enfrentar o caos do mundo.{/alpha}{/i}"
-    c_random "Yada, yada. Comida. Yada. Comida. Yada, yada."
+    c_random "{size=-5}Yada, yada. Comida. Yada. Comida. Yada, yada.{/size}"
     "{i}{alpha=.5}Ignore ele, ignore ele. Você tem um trabalho a fazer, foque.{/alpha}{/i}"
     c_caramelo "Em posição! Pode lançar."
     c_dono "yada. yada yada yada."
     "{i}{alpha=.5}O chefe está falando algo com o bloco de sons. Boas informações são realmente indispensáveis.{/alpha}{/i}"
-    c_dono "yada yada yada...{w} YADA?!"
+    c_dono "yada yada yada...{w}{size=50} YADA?!{/size}"
     "{i}{alpha=.5}Este é o sinal! Eu pego, eu pego.{/alpha}{/i}"
-    c_random "YADA! YADA! Comida! Yada! Atrasado! Yada!"
+    c_random "{size=-5}YADA! YADA! Comida! Yada! Atrasado! Yada!{/size}"
     "{i}{alpha=.5}{cps=15}Eu nã{/cps}{cps=5}o...{/cps}{w} N-{w}{cps=50}não consigo encontrá-la!{/cps}{/alpha}{/i}"
     "{i}{alpha=.5}Acho que o equipamento não está na área de treino... deve ter saído de nosso território.{/alpha}{/i}"
     "{i}{alpha=.5}Ainda sinto seu cheiro, ela está nos arredores, será que...{w} De'Loco.{/alpha}{/i}"
-    c_billy "Yada! Fiuuuuuiiii! Comida. Yum, yada, yum."
+    c_billy "Yada! {size=30}Fiuuuuuiiii!{/size} Comida. {size=-5}Yum, yada, yum.{/size}"
     "{i}{alpha=.5}Preciso encontrar uma forma de confirmar minhas suspeitas,{w}{cps=25} deve haver algum jeito.{/cps}{/alpha}{/i}"
     c_caramelo "Posso ser um cachorro comum... mas sou um cachorro comum com instintos!"
 
@@ -49,7 +49,7 @@ label quintal_noir:
     c_caramelo "Chefe, tem alguém na entrada, fique atrás de mim!{w}{nw}"
     play sound "sounds/beeh-simples.mp3" #Som: Som vaso quebrado
     extend "{cps=25} ...Chefe?{/cps}"
-    c_billy "Yada, yada, NOIR. Yada!"            
+    c_billy "{size=-5}Yada, yada, NOIR. Yada!{/size}"            
     
 
     play sound "sounds/beeh-simples.mp3" #Som: Som porta batendo com pressa
@@ -70,7 +70,7 @@ label quintal_noir_passagem:
     "{i}{alpha=.5}Deve ter  algo escondido  que me a{cps=25}jude a …{/cps}{/alpha}{i}"
     play sound "sounds/beeh-simples.mp3" #Som: Som de moita
     scene bg_quintal_noir_buraco with dissolve
-    c_caramelo "Bingo!{w} É como eu sempre digo, instintos é que fazem o cão."
+    c_caramelo "{size=+10}Bingo!{/size}{w} É como eu sempre digo, instintos é que fazem o cão."
     $ encontrou_passagem = True    
 
     jump quintal_vizinho

@@ -93,7 +93,7 @@ label sala_noir_invest_janela:
     "{i}{alpha=.5}Isso não pode estar acontecendo, me descuidei demais.{/alpha}{/i}"
     scene cs_carro_acelera with dissolve
 ##Carro acelera e sai de cena   
-    c_caramelo "CHEFE!!!"
+    c_caramelo "{size=50}CHEFE!!!{/size}"
 
     scene cs_foco_luz with dissolve
     pause
@@ -108,6 +108,6 @@ label sala_noir_invest_janela:
     "{i}{alpha=.5}{cps=15}Eu estava atrasado...{/cps}{/alpha}{/i}"
 
 ##fadeout pra tela preta
-    "{b}{vspace=50}{space=850}Continua...{/b}"    
+    "{b}{vspace=50}{space=830}Continua...{/b}"    
 
     jump end
