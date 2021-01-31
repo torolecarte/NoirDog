@@ -47,9 +47,9 @@ label quintal_colorido:
     c_billy "Yada! {size=30}Fiuuuuuiiii!{/size} Comida. {size=-5}Yum, yada, yum.{/size}"
     hide caramelo_serio_flipped with dissolve
     "{i}{alpha=.5}Preciso encontrar uma forma de confirmar minhas suspeitas...{/alpha}{/i}"
-    show caramelo_serio_flipped at left with dissolve
+    show caramelo_noir_flipped at left with dissolve
     "{i}{alpha=.5}{cps=25}...deve haver algum jeito.{/cps}{/alpha}{/i}"
-    show caramelo_serio_flipped at center with MoveTransition(1.2)
+    show caramelo_noir_flipped at center with MoveTransition(1.2)
     c_caramelo "Posso ser um cachorro comum... mas sou um cachorro comum com instintos!"
     hide caramelo_noir with dissolve
     jump quintal_noir
