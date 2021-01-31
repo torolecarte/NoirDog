@@ -81,4 +81,4 @@ label quintal_vizinho_plano:
             c_billy "Yada! Yada! Yada! Yada! Yada!"
 
     ##Escolhe o outro lado
-        jump quintal_noir
+    jump quintal_noir
