@@ -42,6 +42,7 @@ label quintal_vizinho:
         show caramelo_noir at right with dissolve
         c_caramelo "E eu tenho instintos demais para meu próprio bem...{w} De'Loco."
         $ cena_entrada = False
+        hide caramelo_noir with dissolve
 
     call screen investigacao_quintal_vizinho
 
@@ -86,7 +87,7 @@ label quintal_vizinho_plano:
     play sound "sounds/beeh-simples.mp3" #Som: Barulho pisando nas sementes
     
     show foco pisada girassol at truecenter with moveinbottom
-
+    pause 0.5
     c_billy "atrasaa{size=+5}A{/size}{size=+10}A{/size}{size=+15}R{/size}{size=+20}RR{/size}{size=+25}R{/size}{size=+30}GHHH!{/size} Atrasado! Yada! Yada!{size=40} Atrasado!{/size} Yada! Sementes! {size=30}Cão!{/size} Yada! Yada!"
     hide foco pisada girassol with dissolve
     hide caramelo_surpreso

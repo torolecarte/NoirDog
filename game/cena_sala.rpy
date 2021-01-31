@@ -58,7 +58,7 @@ label sala_noir:
     if cena_entrada_noir:
         $ cena_entrada_noir = False
         scene bg_sala_noir with pushleft
-        show caramelo_surpreso at left
+        show caramelo_surpreso at left with moveinleft
         c_caramelo "Meu deus, o que houve aqui?"
         hide caramelo_surpreso with dissolve
     if not invest_porta or not invest_vaso or not invest_escuro:
@@ -109,13 +109,13 @@ label sala_noir_invest_janela:
     scene bg_janela with Fade(1.5, 1.5, 1.5)
 
     c_caramelo "{cps=15}Não.{/cps}"
-    scene cs_porta_malas with dissolve
+    
 ##Silhueta com rabo de cavalo joga algo no porta malas de um carro
     c_caramelo "{cps=30}NÃO!{/cps}"
-    scene cs_entra_carro with dissolve
+    
 ##Rabo de Cavalo” entra no carro
     "{i}{alpha=.5}Isso não pode estar acontecendo, me descuidei demais.{/alpha}{/i}"
-    scene cs_carro_acelera with dissolve
+    
 ##Carro acelera e sai de cena   
     c_caramelo "{size=50}CHEFE!!!{/size}"
 
@@ -132,6 +132,6 @@ label sala_noir_invest_janela:
     "{i}{alpha=.5}{cps=15}Eu estava atrasado...{/cps}{/alpha}{/i}"
 
 ##fadeout pra tela preta
-    "{b}{vspace=50}{space=830}Continua...{/b}"    
+    fdp "{b}{vspace=50}{space=810}Continua...{/b}" 
 
     jump end

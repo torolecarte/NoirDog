@@ -1,8 +1,10 @@
 ﻿##Personagens c_
-define c_caramelo = Character('Noir')
-define c_billy = Character('Billie De\'Loco')
-define c_dono = Character('Chefe')
-define c_random = Character('???')
+
+define fdp = Character('')
+define c_caramelo = Character('Noir', window_background="gui/textbox.png")
+define c_billy = Character('Billie De\'Loco', window_background="gui/textbox.png")
+define c_dono = Character('Chefe', window_background="gui/textbox.png")
+define c_random = Character('???', window_background="gui/textbox.png")
 
 ## "{i}{alpha=.5}{/alpha}{/i}"
 #--------------------------------
