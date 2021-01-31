@@ -14,7 +14,7 @@ label quintal_colorido:
 
     scene bg_quintal_real with pushright
     show caramelo_alegre at left with moveinright
-    show chefe_bolinha at right with moveinright
+    show chefe_bolinha_flipped at right with moveinright
     c_caramelo "Estou preparado.{p}{i}{alpha=.5}{cps=25}E sempre estarei.{/cps}{/alpha}{/i}"
     
     "{i}{alpha=.5}Apesar do esforço, sou grato pelos treinos do Chefe.{p}{cps=25}Um humano sábio.{/cps}{/alpha}{/i}"
@@ -26,7 +26,7 @@ label quintal_colorido:
     hide caramelo_curioso
     c_caramelo "Em posição! Pode lançar."
     show chefe_fone at right
-    hide chefe_bolinha
+    hide chefe_bolinha_flipped
     show caramelo_curioso at left
     c_dono "yada. yada yada yada."    
     "{i}{alpha=.5}O chefe está falando algo com o bloco de sons. Boas informações são realmente indispensáveis.{/alpha}{/i}"
