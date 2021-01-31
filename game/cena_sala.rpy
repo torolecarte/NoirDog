@@ -93,7 +93,6 @@ label sala_noir_invest_janela:
         crop(0, 0, 1280, 720)
         size(1280, 720)
         linear 4.0 crop (740, 0, 536, 418)
-    #with pixellate
 
     pause 1.0
 
