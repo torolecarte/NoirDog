@@ -71,11 +71,10 @@ label quintal_vizinho_plano:
     "{i}{alpha=.5}Ele é insano, fala como um dos humanos.{/alpha}{/i}"
     c_caramelo "Saia da frente!"
 
-    menu:
-        "esquerda ou direita":
-            ##Menu de escolha direita ou esquerda, independente da escolha gera *esbarrar no papagaio*
-            c_caramelo "Você é louco!"
-            c_billy "Yada! Yada! Yada! Yada! Yada!"
+    
+    c_caramelo "Você é louco!"
+    c_billy "Yada! Yada! Yada! Yada! Yada!"
 
     ##Escolhe o outro lado
-        jump quintal_noir
+    jump quintal_noir
+        

@@ -35,7 +35,7 @@ label sala_noir:
 
 ##após os 3 cliques=    
     "{i}{alpha=.5}Isso não é  bom. Escureceram meu quarto, quebraram um dos meus alvos, talvez em alguma luta, e o Chefe não está em lugar algum...{/alpha}{/i}"
-    c_caramelo "Havia alguém na porta!"
+    c_caramelo "Havia alguém na porta!{p}{i}{alpha=.5}Preciso checar pela janela{/alpha}{/i}"
 
 ##clique janela(???)
     jump sala_noir_janela
