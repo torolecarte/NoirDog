@@ -77,7 +77,7 @@ label invest_semente_girassol:
 
 label quintal_vizinho_plano:
     show caramelo_noir_surpreso_flipped at left
-    play sound "sounds/beeh-simples.mp3" #Som: Barulho da campainha
+    play sound "sounds/campainha.mp3" volume 0.1
     "{i}{alpha=.5}Eu conheço esse som. É a entrada.{p} Deixei a casa desprotegida. Preciso voltar!{/alpha}{/i}"
         
     ##pisa nas sementes e o papagaio acorda
