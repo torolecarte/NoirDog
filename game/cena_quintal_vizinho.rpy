@@ -35,6 +35,7 @@ label quintal_vizinho:
                 show caramelo_noir_confiante at left with dissolve
                 c_caramelo "Bingo! Missão cumprida."
                 "{i}{alpha=.5}Se isto fazia parte de seu treino, Chefe. Considere feito.{/alpha}{/i}"
+                hide caramelo_noir_confiante
                 jump quintal_vizinho_plano
 
     if cena_entrada:
@@ -74,6 +75,7 @@ label invest_semente_girassol:
 
 
 label quintal_vizinho_plano:
+    show caramelo_surpreso at left
     play sound "sounds/beeh-simples.mp3" #Som: Barulho da campainha
     "{i}{alpha=.5}Eu conheço esse som. É a entrada.{p} Deixei a casa desprotegida. Preciso voltar!{/alpha}{/i}"
         
@@ -86,7 +88,9 @@ label quintal_vizinho_plano:
 
     c_billy "atrasaa{size=+5}A{/size}{size=+10}A{/size}{size=+15}R{/size}{size=+20}RR{/size}{size=+25}R{/size}{size=+30}GHHH!{/size} Atrasado! Yada! Yada!{size=40} Atrasado!{/size} Yada! Sementes! {size=30}Cão!{/size} Yada! Yada!"
     hide foco pisada girassol with dissolve
-    show sprite_billie_acordado at left with moveinleft
+    hide caramelo_surpreso
+    show caramelo_noir_brabo at left
+    show sprite_billie_acordado at center with moveinleft
 
     "{i}{alpha=.5}Não tenho tempo para você, Billie.{w} Há alguém na casa!{/alpha}{/i}"
 
@@ -106,11 +110,13 @@ label quintal_vizinho_plano:
     c_caramelo "Saia da frente!"
     
     show sprite_billie_acordado at center with move
-
+    show caramelo_noir_brabo at center with move
     show bg_billy_noir 
     show sprite_billie_acordado at center
     with hpunch
-
+    show caramelo_noir_brabo with move:
+        xalign 0.1
+        yalign 1.0
     c_caramelo "Você é louco!"
 
     show sprite_billie_acordado at right with move
