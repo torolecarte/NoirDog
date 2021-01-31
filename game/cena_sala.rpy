@@ -59,7 +59,7 @@ label sala_noir:
 
     ##após os 3 cliques
     "{i}{alpha=.5}Isso não parece bom. Escureceram meu quarto, quebraram um dos meus alvos, talvez em alguma luta, e o Chefe não está em lugar algum...{/alpha}{/i}"
-    c_caramelo "Havia alguém na porta!"
+    c_caramelo "Havia alguém na porta!{p}{i}{alpha=.5}{cps=30}Preciso checar na janela.{/cps}{/alpha}{/i}"
 
     call screen investigacao_sala_noir_final
 

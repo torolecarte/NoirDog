@@ -47,7 +47,7 @@ label quintal_noir:
     scene bg_quintal_noir_buraco with dissolve
     "{i}{alpha=.5}Consegui, essa foi por um pêlo.{/alpha}{/i}"
     c_caramelo "Chefe, tem alguém na entrada, fique atrás de mim!{w}{cps=25} ...Chefe?{/cps}"
-    c_billy "Yada, yada, CARAMELO. Yada!"
+    c_billy "Yada, yada, NOIR. Yada!"
 
     play sound "sounds/beeh-simples.mp3" #Som: Som vaso quebrado
         
