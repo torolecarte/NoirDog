@@ -39,18 +39,18 @@ label quintal_colorido:
 
 label quintal_noir:
     
-    scene bg_quintal_noir with dissolve
-
+    
     if not encontrou_passagem:
+        scene bg_quintal_noir with dissolve
         call screen investigacao_quintal_noir
     
-    c_caramelo "Consegui. Chefe, Tem alguém na entrada, fique atrás de mim!{w}{cps=25} ...Chefe?{/cps}"
+    scene bg_quintal_noir_buraco with dissolve
+    "{i}{alpha=.5}Consegui, essa foi por um pêlo.{/alpha}{/i}"
+    c_caramelo "Chefe, tem alguém na entrada, fique atrás de mim!{w}{cps=25} ...Chefe?{/cps}"
     c_billy "Yada, yada, CARAMELO. Yada!"
 
     play sound "sounds/beeh-simples.mp3" #Som: Som vaso quebrado
-    play sound "sounds/beeh-simples.mp3" #Som: Pisando na casca de semente de girassol
-    
-    pause
+        
     c_billy "Yada, yada!"
 
     play sound "sounds/beeh-simples.mp3" #Som: Som porta batendo com pressa
@@ -61,14 +61,15 @@ label quintal_noir:
 
 label quintal_noir_pularcerca:
 
-    "{i}{alpha=.5}Mesmo com meu treino, acho que não seria capaz de pular essa barreira.{p}E mesmo se fosse, quem sabe o que pode estar me esperando do outro lado?{/alpha}{/i}"
+    "{i}{alpha=.5}Mesmo com meu treino, acho que não seria capaz de pular essa barreira.{p}E mesmo que fosse, quem sabe o que me espera do outro lado?{/alpha}{/i}"
 
     jump quintal_noir
     
 
 label quintal_noir_passagem:
     
-    "{i}{alpha=.5}Talvez por aqui tenha algo oculto que eu po{cps=15}ssa…{/cps}{/alpha}{i}"
+    "{i}{alpha=.5}Deve ter  algo escondido  que me a{cps=25}jude a …{/cps}{/alpha}{i}"
+    scene bg_quintal_noir_buraco with dissolve
     c_caramelo "Bingo!{w} É como eu sempre digo, instintos é que fazem o cão."
     $ encontrou_passagem = True    
 
