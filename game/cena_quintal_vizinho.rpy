@@ -67,6 +67,7 @@ label quintal_vizinho_plano:
     "{i}{alpha=.5}Eu conheço esse som. É a entrada.{p} Deixei a casa desprotegida. Preciso voltar!{/alpha}{/i}"
     ##pisa nas sementes e o papagaio acorda
     c_caramelo "Mas qu{cps=5}e...{/cps}"
+    play sound "sounds/beeh-simples.mp3" #Som: Barulho pisando nas sementes
     c_billy "atrasaaAARRRRGHHH! Atrasado! Yada! Yada! Atrasado! Yada! Sementes! Cão! Yada! Yada!"
     "{i}{alpha=.5}Não tenho tempo para você, Billie.{w} Há alguém na casa!{/alpha}{/i}"
     c_caramelo "Saia da minha frente!"
