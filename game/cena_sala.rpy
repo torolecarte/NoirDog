@@ -58,9 +58,9 @@ label sala_noir:
     if cena_entrada_noir:
         $ cena_entrada_noir = False
         scene bg_sala_noir with pushleft
-        show caramelo_noir_surpreso_flipped at left with moveinleft
+        show caramelo_noir_medo_flipped at left with moveinleft
         c_caramelo "Meu deus, o que houve aqui?"
-        hide caramelo_noir_surpreso_flipped with dissolve
+        hide caramelo_noir_medo_flipped with dissolve
     
     if not invest_porta or not invest_vaso or not invest_escuro:
         call screen investigacao_sala_noir

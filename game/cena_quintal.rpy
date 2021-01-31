@@ -39,17 +39,17 @@ label quintal_colorido:
     hide caramelo_curioso
     "{i}{alpha=.5}Este é o sinal! Eu pego, eu pego.{/alpha}{/i}"
     c_random "{size=-5}YADA! YADA! Comida! Yada! Atrasado! Yada!{/size}"
-    show caramelo_noir_flipped at left
+    show caramelo_serio_flipped at left
     hide caramelo_alegre
     "{i}{alpha=.5}{cps=15}Eu nã{/cps}{cps=5}o...{/cps}{w} N-{w}{cps=50}não consigo encontrá-la!{/cps}{/alpha}{/i}"
     "{i}{alpha=.5}Acho que o equipamento não está na área de treino... deve ter saído de nosso território.{/alpha}{/i}"
     "{i}{alpha=.5}Ainda sinto seu cheiro, ela está nos arredores, será que...{w} De'Loco.{/alpha}{/i}"
     c_billy "Yada! {size=30}Fiuuuuuiiii!{/size} Comida. {size=-5}Yum, yada, yum.{/size}"
-    hide caramelo_noir_flipped with dissolve
+    hide caramelo_serio_flipped with dissolve
     "{i}{alpha=.5}Preciso encontrar uma forma de confirmar minhas suspeitas...{/alpha}{/i}"
-    show caramelo_noir_flipped at left with dissolve
+    show caramelo_serio_flipped at left with dissolve
     "{i}{alpha=.5}{cps=25}...deve haver algum jeito.{/cps}{/alpha}{/i}"
-    show caramelo_noir_flipped at center with MoveTransition(1.2)
+    show caramelo_serio_flipped at center with MoveTransition(1.2)
     c_caramelo "Posso ser um cachorro comum... mas sou um cachorro comum com instintos!"
     hide caramelo_noir with dissolve
     jump quintal_noir
