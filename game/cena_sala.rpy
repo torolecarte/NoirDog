@@ -108,7 +108,8 @@ label sala_noir_invest_janela:
         crop(0, 0, 1280, 720)
         size(1280, 720)
         linear 4.0 crop (740, 0, 536, 418)
-
+    
+    stop music fadeout 2.0
     pause 1.0
 
     scene bg_janela with Fade(1.5, 1.5, 1.5)
@@ -143,9 +144,10 @@ label sala_noir_invest_janela:
     pause 0.3
 
     scene cs_foco_bolinha with dissolve
+    play sound "sounds/datilografando.mp3"
     "{i}{alpha=.5}{cps=20}Era tarde demais...{/cps}{/alpha}{/i}"
 ##Bolinha no chão-luz foco com corte das persianas na bolinha
-    scene bg_black with dissolve
+    scene bg_black with dissolve    
     "{i}{alpha=.5}{cps=10}Eu estava atrasado...{/cps}{/alpha}{/i}"
 
 ##fadeout pra tela preta
