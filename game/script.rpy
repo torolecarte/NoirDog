@@ -12,8 +12,24 @@ image caramelo_noir_surpreso_flipped = im.Flip("caramelo_surpreso.png", horizont
 image caramelo_noir_brabo_flipped = im.Flip("caramelo_noir_brabo.png", horizontal=True)
 image caramelo_noir_confiante_flipped = im.Flip("caramelo_noir_confiante.png", horizontal=True)
 image caramelo_noir_medo_flipped = im.Flip("caramelo_noir_medo.png", horizontal=True)
+image chefe_bolinha_flipped = im.Flip("chefe_bolinha.png", horizontal=True)
+image caramelo_medo_persiana_flipped = im.Flip("caramelo_medo_persiana.png", horizontal=True)
+image caramelo_surpreso_persiana_flipped = im.Flip("caramelo_surpreso_persiana.png", horizontal=True)
 
-## "{i}{alpha=.5}{/alpha}{/i}"
+#
+#
+#
+#
+#
+#
+
+#
+#
+#
+#
+#
+#
+
 #--------------------------------
 label start:
     #jump quintal_vizinho

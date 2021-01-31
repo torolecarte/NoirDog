@@ -113,10 +113,10 @@ label sala_noir_invest_janela:
     show caramelo_noir_surpreso_flipped at center with moveinleft
     pause 0.05
     hide caramelo_noir_surpreso_flipped
-    show caramelo_surpreso_persiana at center     ##-------------------------------
+    show caramelo_surpreso_persiana_flipped at center     ##-------------------------------
     c_caramelo "{cps=15}Não.{/cps}"
-    hide caramelo_surpreso_persiana
-    show caramelo_medo_persiana at center   ##-------------------------------
+    hide caramelo_surpreso_persiana_flipped
+    show caramelo_medo_persiana_flipped at center   ##-------------------------------
 ##Silhueta com rabo de cavalo joga algo no porta malas de um carro
     c_caramelo "{cps=30}NÃO!{/cps}"
     

@@ -25,14 +25,14 @@ label quintal_colorido:
     "{i}{alpha=.5}Ignore ele, ignore ele. Você tem um trabalho a fazer, foque.{/alpha}{/i}"
     hide caramelo_curioso
     c_caramelo "Em posição! Pode lançar."
-    show chefe_fone at right
-    hide chefe_bolinha_flipped
+    hide chefe_bolinha_flipped with dissolve
+    show chefe_fone at right with dissolve    
     show caramelo_curioso at left
     c_dono "yada. yada yada yada."    
     "{i}{alpha=.5}O chefe está falando algo com o bloco de sons. Boas informações são realmente indispensáveis.{/alpha}{/i}"
     c_dono "yada yada yada...{w}{nw}"
-    show chefe_jogando at right
-    hide chefe_fone
+    hide chefe_fone with dissolve
+    show chefe_jogando at right with dissolve    
     hide caramelo_curioso
     extend "{size=50} YADA?!{/size}"
     hide chefe_jogando with moveoutright
