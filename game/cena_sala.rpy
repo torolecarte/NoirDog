@@ -88,7 +88,16 @@ label sala_noir_invest_porta:
 
 
 label sala_noir_invest_janela:
-    scene bg_janela with dissolve
+
+    show bg_sala_noir:
+        crop(0, 0, 1280, 720)
+        size(1280, 720)
+        linear 4.0 crop (740, 0, 536, 418)
+    #with pixellate
+
+    pause 1.0
+
+    scene bg_janela with Fade(1.5, 1.5, 1.5)
 
     c_caramelo "{cps=15}Não.{/cps}"
     scene cs_porta_malas with dissolve
