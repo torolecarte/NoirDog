@@ -6,7 +6,7 @@ define c_billy = Character('Billie De\'Loco')
 define c_dono = Character('Chefe')
 define c_random = Character('???')
 
-image caramelo_serio_flipped = im.Flip("caramelo_serio_flipped.png", horizontal=True)
+image caramelo_serio_flipped = im.Flip("caramelo_serio.png", horizontal=True)
 image caramelo_noir_flipped = im.Flip("caramelo_noir.png", horizontal=True)
 image caramelo_noir_surpreso_flipped = im.Flip("caramelo_surpreso.png", horizontal=True)
 image caramelo_noir_brabo_flipped = im.Flip("caramelo_noir_brabo.png", horizontal=True)
