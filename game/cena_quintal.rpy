@@ -64,11 +64,13 @@ label quintal_noir:
     scene bg_quintal_noir_buraco with dissolve
     show caramelo_noir_flipped at left with moveinbottom
     "{i}{alpha=.5}Consegui, essa foi por um pêlo.{/alpha}{/i}"
-    c_caramelo "Chefe, tem alguém na entrada, fique atrás de mim!{p}{nw}"
-    play sound "sounds/beeh-simples.mp3" #Som: Som vaso quebrado
-    show caramelo_noir_surpreso_flipped at left
+    play sound "sounds/vaso.wav" volume 0.2 #Som: Som vaso quebrado
+    c_caramelo "Chefe, tem alguém na entrada, fique atrás de mim!"
     hide caramelo_noir_flipped
-    extend "{cps=25} ...Chefe?{/cps}"
+    show caramelo_noir_surpreso_flipped at left      
+    
+    ##hide caramelo_noir_flipped
+    c_caramelo "{cps=25} ...Chefe?{/cps}"
     c_billy "{size=-5}Yada, yada, NOIR. Yada!{/size}"            
     
 
@@ -90,7 +92,8 @@ label quintal_noir_pularcerca:
 label quintal_noir_passagem:
     show caramelo_noir at right with dissolve
     "{i}{alpha=.5}Deve ter  algo escondido  que me a{cps=25}jude a …{/cps}{/alpha}{i}"
-    play sound "sounds/beeh-simples.mp3" #Som: Som de moita
+    play sound "sounds/folhas.wav"  ##barulho de arbusto
+    
     scene bg_quintal_noir_buraco with dissolve
     show caramelo_noir_confiante at right with dissolve
     c_caramelo "{size=+10}Bingo!{/size}{w} É como eu sempre digo, instintos é que fazem o cão."
