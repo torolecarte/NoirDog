@@ -14,25 +14,40 @@ screen investigacao_quintal_noir():
 label quintal_colorido:
 
     scene bg_quintal_real with dissolve
-    
+    show caramelo_alegre at left with dissolve
+    show chefe_bolinha at right with dissolve
     c_caramelo "Estou preparado.{p}{i}{alpha=.5}{cps=25}E sempre estarei.{/cps}{/alpha}{/i}"
     
     "{i}{alpha=.5}Apesar do esforço, sou grato pelos treinos do Chefe.{p}{cps=25}Um humano sábio.{/cps}{/alpha}{/i}"
     "{i}{alpha=.5}Mesmo com a companhia um do outro e seguros, ele se prepara para o pior.{p}Eu concordo com você, Chefe.{/alpha}{/i}"
     "{i}{alpha=.5}É sempre bom estar pronto para enfrentar o caos do mundo.{/alpha}{/i}"
+    show caramelo_curioso at left
     c_random "{size=-5}Yada, yada. Comida. Yada. Comida. Yada, yada.{/size}"
     "{i}{alpha=.5}Ignore ele, ignore ele. Você tem um trabalho a fazer, foque.{/alpha}{/i}"
+    hide caramelo_curioso
     c_caramelo "Em posição! Pode lançar."
-    c_dono "yada. yada yada yada."
+    show chefe_fone at right
+    hide chefe_bolinha
+    show caramelo_curioso at left
+    c_dono "yada. yada yada yada."    
     "{i}{alpha=.5}O chefe está falando algo com o bloco de sons. Boas informações são realmente indispensáveis.{/alpha}{/i}"
-    c_dono "yada yada yada...{w}{size=50} YADA?!{/size}"
+    c_dono "yada yada yada...{w}{nw}"
+    show chefe_jogando at right
+    hide chefe_fone
+    hide caramelo_curioso
+    extend "{size=50} YADA?!{/size}"
+    hide chefe_jogando with dissolve
+    hide caramelo_curioso
     "{i}{alpha=.5}Este é o sinal! Eu pego, eu pego.{/alpha}{/i}"
     c_random "{size=-5}YADA! YADA! Comida! Yada! Atrasado! Yada!{/size}"
+    show caramelo_serio at left
+    hide caramelo_alegre
     "{i}{alpha=.5}{cps=15}Eu nã{/cps}{cps=5}o...{/cps}{w} N-{w}{cps=50}não consigo encontrá-la!{/cps}{/alpha}{/i}"
     "{i}{alpha=.5}Acho que o equipamento não está na área de treino... deve ter saído de nosso território.{/alpha}{/i}"
     "{i}{alpha=.5}Ainda sinto seu cheiro, ela está nos arredores, será que...{w} De'Loco.{/alpha}{/i}"
     c_billy "Yada! {size=30}Fiuuuuuiiii!{/size} Comida. {size=-5}Yum, yada, yum.{/size}"
     "{i}{alpha=.5}Preciso encontrar uma forma de confirmar minhas suspeitas,{w}{cps=25} deve haver algum jeito.{/cps}{/alpha}{/i}"
+    hide caramelo_serio with dissolve
     c_caramelo "Posso ser um cachorro comum... mas sou um cachorro comum com instintos!"
 
     jump quintal_noir
