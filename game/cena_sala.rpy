@@ -54,10 +54,10 @@ label sala_inicio:
 
 
 label sala_noir:
-    scene bg_sala_noir with dissolve
     
     if cena_entrada_noir:
         $ cena_entrada_noir = False
+        scene bg_sala_noir with pushleft
         c_caramelo "Meu deus, o que houve aqui?"
 
     if not invest_porta or not invest_vaso or not invest_escuro:
