@@ -108,9 +108,10 @@ label sala_noir_invest_janela:
     pause 1.0
 
     scene bg_janela with Fade(1.5, 1.5, 1.5)
-
+    show caramelo_noir_surpreso_flipped at center     ##-------------------------------
     c_caramelo "{cps=15}Não.{/cps}"
-    
+    hide caramelo_noir_surpreso_flipped
+    show caramelo_noir_medo_flipped at center   ##-------------------------------
 ##Silhueta com rabo de cavalo joga algo no porta malas de um carro
     c_caramelo "{cps=30}NÃO!{/cps}"
     
@@ -119,7 +120,7 @@ label sala_noir_invest_janela:
     
 ##Carro acelera e sai de cena   
     c_caramelo "{size=50}CHEFE!!!{/size}"
-
+    
     scene cs_foco_luz with dissolve
     pause .2
 
