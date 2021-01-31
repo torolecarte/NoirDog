@@ -31,20 +31,23 @@ label sala_inicio:
     "{cps=25}{i}{alpha=.5}Mais um dia agradável.{/alpha}{/i}{/cps}"
     
     scene bg_sala_real
-    show caramelo_dormindo at left with moveinleft
+    show caramelo_dormindo at right with moveinright
     "{i}{alpha=.5}Nada como viver sob a segurança de portões resistentes, almofadas macias e um Chefe vigilante.{/alpha}{/i}"    
     "{i}{alpha=.5}Acredito que seus olhos podem ver até mesmo o destino das coisas.{p}{nw}{/alpha}{/i}"
-    show caramelo_curioso at left
+    show caramelo_curioso at right
     hide caramelo_dormindo
     "{i}{alpha=.5}Falando nele, sinto seu cheiro ficando mais forte.{/alpha}{/i}"
-    show chefe_bolinha at right with moveinright
+    show chefe_bolinha at left with moveinleft
     c_dono "yada yada NOIR yada yada BOLINHA yada."    
-    hide chefe_bolinha with dissolve
+    hide chefe_bolinha with moveoutleft
+    #show chefe_bolinha at right with MoveTransition(0.5, )
 
     "{i}{alpha=.5}Estranho, sequer terminei o descanso do primeiro treino e o Chefe já tem mais um exercício planejado.{/alpha}{/i}"
     "{i}{alpha=.5}Mas se ele acha mesmo necessário, então eu também acho.{/alpha}{/i}"
-    show caramelo_alegre at left
     hide caramelo_curioso
+    show caramelo_alegre at right
+    hide caramelo_alegre with moveoutleft
+    
     c_caramelo "A caminho, Chefe."
 
     jump quintal_colorido

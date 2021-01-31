@@ -14,8 +14,8 @@ screen investigacao_quintal_noir():
 label quintal_colorido:
 
     scene bg_quintal_real with dissolve
-    show caramelo_alegre at left with dissolve
-    show chefe_bolinha at right with dissolve
+    show caramelo_alegre at left with moveinright
+    show chefe_bolinha at right with moveinright
     c_caramelo "Estou preparado.{p}{i}{alpha=.5}{cps=25}E sempre estarei.{/cps}{/alpha}{/i}"
     
     "{i}{alpha=.5}Apesar do esforço, sou grato pelos treinos do Chefe.{p}{cps=25}Um humano sábio.{/cps}{/alpha}{/i}"
@@ -36,7 +36,7 @@ label quintal_colorido:
     hide chefe_fone
     hide caramelo_curioso
     extend "{size=50} YADA?!{/size}"
-    hide chefe_jogando with dissolve
+    hide chefe_jogando with moveoutright
     hide caramelo_curioso
     "{i}{alpha=.5}Este é o sinal! Eu pego, eu pego.{/alpha}{/i}"
     c_random "{size=-5}YADA! YADA! Comida! Yada! Atrasado! Yada!{/size}"
