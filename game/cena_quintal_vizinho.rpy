@@ -21,17 +21,24 @@ label quintal_vizinho:
     scene bg_billy_noir with dissolve
 
     if invest_papagaio and invest_bolinha and invest_semente_girassol:
+        show caramelo_noir at right with dissolve
+        show sprite sonolento at left with dissolve
         "{i}{alpha=.5}Se meu instinto estiver correto, eu só preciso esperar um pou{cps=15}co...{/cps}{/alpha}{/i}"
-        ##Papagaio muda o sprite de acordado para dormindo
+        hide sprite sonolento with dissolve
+        show sprite billie dormindo at left with dissolve
         "{i}{alpha=.5}Como previsto, ele pode ser louco, mas o peso da comida tem sempre o mesmo resultado.{p} Sono.{/alpha}{/i}"
         "{i}{alpha=.5}Muito bem, agora posso executar o plano, preciso apenas me esquivar das sementes.{p} {cps=20}Serei sorrateiro como o silêncio.{/cps}{/alpha}{/i}"
+        hide sprite billie dormindo
+        hide caramelo_noir
         menu:
             "Executar plano":
+                show caramelo_noir_confiante at left with dissolve
                 c_caramelo "Bingo! Missão cumprida."
                 "{i}{alpha=.5}Se isto fazia parte de seu treino, Chefe. Considere feito.{/alpha}{/i}"
                 jump quintal_vizinho_plano
 
     if cena_entrada:
+        show caramelo_noir at right with dissolve
         c_caramelo "E eu tenho instintos demais para meu próprio bem...{w} De'Loco."
         $ cena_entrada = False
 
@@ -42,6 +49,7 @@ label quintal_vizinho:
 
 label invest_papagaio:    
     $ invest_papagaio = True
+    show caramelo_noir at right with dissolve
     "{i}{alpha=.5}{cps=25}Pobre coitado,{/cps}{w} o mundo externo é feito de dor e sofrimento, e este animal conhece os dois intimamente.{/alpha}{/i}"
     "{i}{alpha=.5}Nem quero imaginar o que acontece por aqui, apenas os gritos constantes, cantorias estranhas e palavras sem sentido são suficientes para alimentar meus pesadelos.{/alpha}{/i}"
     "{i}{alpha=.5}Não sei o que tenha deixado ele assim,{w} mas seja o que for,{w}{cps=20} jamais quero encontrar.{/cps}{/alpha}{/i}"
@@ -51,6 +59,7 @@ label invest_papagaio:
 
 label invest_bolinha:
     $ invest_bolinha = True    
+    show caramelo_noir at right with dissolve
     "{i}{alpha=.5}Lá está,{w} brilhante como sempre, sua cor única me hipnotiza. Logo te salvarei, apenas preciso de um plano.{/alpha}{/i}"
 
     jump quintal_vizinho
@@ -58,6 +67,7 @@ label invest_bolinha:
 
 label invest_semente_girassol:
     $ invest_semente_girassol = True
+    show caramelo_noir at right with dissolve
     "{i}{alpha=.5}{cps=25}Sementes por todos os lados.{/cps}{w} Isso pode ser um problema,{w} mas por outro lado, Billie acabou de se alimentar.{/alpha}{/i}"    
 
     jump quintal_vizinho

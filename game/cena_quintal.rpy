@@ -46,10 +46,13 @@ label quintal_colorido:
     "{i}{alpha=.5}Acho que o equipamento não está na área de treino... deve ter saído de nosso território.{/alpha}{/i}"
     "{i}{alpha=.5}Ainda sinto seu cheiro, ela está nos arredores, será que...{w} De'Loco.{/alpha}{/i}"
     c_billy "Yada! {size=30}Fiuuuuuiiii!{/size} Comida. {size=-5}Yum, yada, yum.{/size}"
-    "{i}{alpha=.5}Preciso encontrar uma forma de confirmar minhas suspeitas,{w}{cps=25} deve haver algum jeito.{/cps}{/alpha}{/i}"
     hide caramelo_serio with dissolve
+    "{i}{alpha=.5}Preciso encontrar uma forma de confirmar minhas suspeitas...{/alpha}{/i}"
+    show caramelo_noir at left with dissolve 
+    "{i}{alpha=.5}{cps=25}...deve haver algum jeito.{/cps}{/alpha}{/i}"
+    show caramelo_noir at center with MoveTransition(1.2)
     c_caramelo "Posso ser um cachorro comum... mas sou um cachorro comum com instintos!"
-
+    hide caramelo_noir with dissolve
     jump quintal_noir
 
 label quintal_noir:
@@ -74,17 +77,18 @@ label quintal_noir:
 
 
 label quintal_noir_pularcerca:
-
+    show caramelo_noir at right with dissolve
     "{i}{alpha=.5}Mesmo com meu treino, acho que não seria capaz de pular essa barreira.{p}E mesmo que fosse, quem sabe o que me espera do outro lado?{/alpha}{/i}"
 
     jump quintal_noir
     
 
 label quintal_noir_passagem:
-    
+    show caramelo_noir at right with dissolve
     "{i}{alpha=.5}Deve ter  algo escondido  que me a{cps=25}jude a …{/cps}{/alpha}{i}"
     play sound "sounds/beeh-simples.mp3" #Som: Som de moita
     scene bg_quintal_noir_buraco with dissolve
+    show caramelo_noir_confiante at right with dissolve
     c_caramelo "{size=+10}Bingo!{/size}{w} É como eu sempre digo, instintos é que fazem o cão."
     $ encontrou_passagem = True    
 
