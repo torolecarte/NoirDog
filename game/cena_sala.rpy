@@ -36,6 +36,7 @@ label sala_inicio:
     "{i}{alpha=.5}Acredito que seus olhos podem ver até mesmo o destino das coisas.{p}{nw}{/alpha}{/i}"
     show caramelo_curioso_flipped at right
     hide caramelo_dormindo
+    play sound "sounds/latido_hmm.mp3"
     "{i}{alpha=.5}Falando nele, sinto seu cheiro ficando mais forte.{/alpha}{/i}"
     show chefe_bolinha at left with moveinleft
     c_dono "yada yada NOIR yada yada BOLINHA yada."    
@@ -46,6 +47,7 @@ label sala_inicio:
     "{i}{alpha=.5}Mas se ele acha mesmo necessário, então eu também acho.{/alpha}{/i}"
     hide caramelo_curioso_flipped
     show caramelo_alegre at right
+    play sound "sounds/latido_alarmado.mp3"
     hide caramelo_alegre with moveoutleft
     
     c_caramelo "A caminho, Chefe."
