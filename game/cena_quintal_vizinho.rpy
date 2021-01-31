@@ -84,7 +84,8 @@ label quintal_vizinho_plano:
     
     
     play sound "sounds/beeh-simples.mp3" #Som: Barulho pisando nas sementes
-    show foco pisada girassol at truecenter with moveinleft
+    #show foco pisada girassol with zoomin
+    show foco pisada girassol at truecenter with moveinbottom
 
     c_billy "atrasaa{size=+5}A{/size}{size=+10}A{/size}{size=+15}R{/size}{size=+20}RR{/size}{size=+25}R{/size}{size=+30}GHHH!{/size} Atrasado! Yada! Yada!{size=40} Atrasado!{/size} Yada! Sementes! {size=30}Cão!{/size} Yada! Yada!"
     hide foco pisada girassol with dissolve
@@ -117,9 +118,10 @@ label quintal_vizinho_plano:
     show caramelo_noir_brabo with move:
         xalign 0.1
         yalign 1.0
+    show sprite_billie_acordado at right with move
     c_caramelo "Você é louco!"
 
-    show sprite_billie_acordado at right with move
+    
 
     c_billy "Yada! Yada! Yada! Yada! Yada!"
 
