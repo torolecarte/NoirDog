@@ -35,6 +35,8 @@ image caramelo_alegre_flipped = im.Flip("caramelo_alegre.png", horizontal=True)
 
 #--------------------------------
 label start:
+    stop music fadeout 1.0
+
     #jump quintal_vizinho
     jump sala_inicio
 
