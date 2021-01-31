@@ -1,4 +1,5 @@
 define encontrou_passagem = False
+define entrou_noir = False
 
 screen investigacao_quintal_noir():
         imagemap:
@@ -61,6 +62,9 @@ label quintal_colorido:
 
 label quintal_noir:
     
+    if not entrou_noir:
+        $ entrou_noir = True
+        play music "sounds/jazzin.ogg"
     
     if not encontrou_passagem:
         scene bg_quintal_noir with dissolve
